@@ -1,0 +1,465 @@
+# Collection Framework 정리
+
+Collection Framework이란, 'data group(데이터 군)'을 다루고 표현하기 위한 단일화된 구조(architecture)이다. Collection은 다수의 데이터, 즉 데이터 그룹을 의미한다.
+
+JDK 1.2부터 Collection Framework이 추가되면서, 다양한 종류의 Collection 클래스가 추가되고 모든 Collection 클래스들을 표준화된 방식으로 다룰 수 있도록 체계화 되었다.
+
+##### 장점
+
+- 인터페이스와 다형성을 이용한 객체지향적 설계를 통한 표준화
+- 사용법을 익히기 편리하다.
+- 재사용성이 높은 코드를 작성할 수 있다.
+
+
+
+## 1.1 Collection Framework의 핵심 인터페이스
+
+Collection Framework에서는 Collection(데이터 그룹)을 크게 3가지 타입이 존재한다고 가정하고, List, Set, Map의 3가지 인터페이스를 정의하였다.
+
+![Collection Framework의 핵심 인터페이스 간의 상속 계층도](https://t1.daumcdn.net/cfile/tistory/214F514E5952224923)
+
+- **List**: 순서가 있는 데이터의 집합. 데이터의 중복을 허용한다  
+  예) 대기자 명단  
+  구현 클래스: ArrayList, LinkedList, Stack*(deprecated)*, Vector*(deprecated)*
+- **Set**: 순서를 유지하지 않는 데이터의 집합. 데이터의 중복을 허용하지 않는다.  
+  예) 양의 정수집합, 소수의 집합  
+  구현 클래스: HashSet, TreeSet
+- **Map**: key-value 쌍으로 이루어진 데이터의 집합.  
+  순서는 유지되지 않으며, 키는 중복을 허용하지 않고, 값은 중복을 허용한다.  
+  구현 클래스: HashMap, TreeMap, Hashtable*(deprecated)*, Properties*(deprecated)*
+
+실제 개발 시 다루고자 하는 Collection의 특징을 파악하고, 어떤 인터페이스를 구현한 Collection 클래스를 사용할지 결정해야 한다.
+
+Stack, Vector, Hashtable, Properties 클래스들은 Collection Framework 이전부터 존재하던 것으로, Collection Framework의 명명법을 따르지 않으므로 가급적 사용하지 않는 것이 좋다.
+
+### Collection 인터페이스
+
+List와 Set의 조상.
+
+Collection 클래스에 저장된 데이터를 읽고, 추가하고 삭제하는 등 Collection을 다루는 데 가장 기본적인 메소드들을 정의하고 있다.
+
+| Method                                                       | 설명                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| boolean add(Object o)<br />boolean addAll(Collection<? extends E> c) | 지정된 객체(o) 또는 Collection(c)의 객체들을 <br />Collection에 추가한다. |
+| void clear()                                                 | Collection의 모든 객체를 삭제한다.                           |
+| boolean contains(Object o)<br />boolean containsAll(Collection<?> c) | 지정된 객체(o) 또는 Collection(c)의 객체들이 <br />Collection에 포함되어 있는지 확인한다. |
+| boolean equals(Object o)                                     | 동일한 Collection인지 비교한다.                              |
+| int hashCode()                                               | Collection의 hash code를 리턴한다.                           |
+| boolean isEmpty()                                            | Collection이 비어있는지 확인한다.                            |
+| Iterator<E> iterator()                                       | Collection의 Iterator를 얻어서 리턴한다.                     |
+| boolean remove(Object o)                                     | 지정된 객체를 삭제한다.                                      |
+| boolean removeAll(Collection<?> c)                           | 지정된 Collection에 포함된 객체들을 삭제한다.                |
+| boolean retainAll(Collection<?> c)                           | 지정된 Collection에 포함된 객체만을 남기고 <br />다른 객체들은 Collection에서 삭제한다. <br />이 작업으로 인해 Collection에 변화가 있으면 true, <br />그렇지 않으면 false를 리턴한다. |
+
+*(E, T, K, V 등은 모두 Object를 나타냄.)*
+
+### List 인터페이스
+
+중복을 허용, 저장순서가 유지됨.
+
+![List의 상속계층도](https://dzone.com/storage/temp/8154378-listclassdiagram.png)
+
+| Method                                                       | 설명                                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| void add(int index, E element)<br />boolean addAll(int index, Collection<? extends E> c) | 지정된 위치(index)에 객체(element) 또는 <br />Collection에 포함된 객체들을 추가한다. |
+| E get(int index)                                             | 지정된 위치(index)에 있는 객체를 리턴한다.                   |
+| int indexOf(Object o)                                        | 지정된 객체의 위치(index)를 리턴한다.<br />(List의 첫번째 요소부터 순방향으로 찾는다.) |
+| int lastIndexOf(Object o)                                    | 지정된 객체의 위치(index)를 리턴한다.<br />(List의 첫번째 요소부터 역방향으로 찾는다.) |
+| ListIterator<E> listIterator()<br />ListIterator<E> listIterator(int index) | List의 객체에 접근할 수 있는 ListIterator를 리턴한다.        |
+| E remove(int index)                                          | 지정된 위치(index)에 있는 객체를 삭제하고 <br />삭제된 객체를 리턴한다. |
+| E set(int index, Object element)                             | 지정된 위치(index)에 객체(element)를 저장한다.               |
+| void sort(Comparator<? super E> c)                           | 지정된 비교자(comparator)로 List를 정렬한다.                 |
+| List<E> subList(int fromIndex, int toIndex)                  | 지정된 범위(fromIndex~toIndex)에 있는 <br />객체를 리턴한다. |
+
+### Set 인터페이스
+
+중복을 허용하지 않고, 저장순서가 유지되지 않는다.
+
+![Set의 상속계층도](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSklWbWEdOy0sKvwJ5ReSUlTGNIQJWmB4hclIdSspzVSAf1eyym)
+
+### Map 인터페이스
+
+key-value 쌍으로 묶어서 저장. 키는 중복될 수 없지만, 값은 중복을 허용한다.  
+중복된 키와 값을 저장하면, 기존의 값은 없어지고 마지막에 저장된 값이 남게 된다.
+
+![Map의 상속계층도](https://dzone.com/storage/temp/1821395-map-interface.png)
+
+| Method                                      | 설명                                                         |
+| ------------------------------------------- | ------------------------------------------------------------ |
+| void clear()                                | Map의 모든 객체를 삭제한다.                                  |
+| boolean containsKey(Object key)             | 지정된 key 객체와 일치하는 Map의 key 객체가 있는지 확인한다. |
+| boolean containsValue(Object value)         | 지정된 value 객체와 일치하는 Map의 <br />value 객체가 있는지 확인한다. |
+| Set<Map.Entry<K, V>> entrySet()             | Map에 저장되어 있는 key-value 쌍을 <br />Map.Entry 타입의 객체로 저장한 Set으로 리턴한다. |
+| boolean equals(Object o)                    | 동일한 Map인지 비교한다.                                     |
+| V get(Object key)                           | 지정한 key 객체에 대응하는 value 객체를 찾아서 리턴한다.     |
+| int hashCode()                              | 해시코드를 리턴한다.                                         |
+| boolean isEmpty()                           | Map이 비어있는지 확인한다.                                   |
+| Set<K> keySet()                             | Map에 저장된 모든 key 객체를 리턴한다.                       |
+| V put(K key, V value)                       | Map에 value 객체를 key 객체에 연결(mapping)하여 저장한다.    |
+| void putAll(Map<? extends K,? extends V> m) | 지정된 Map의 모든 key-value 쌍을 추가한다.                   |
+| V remove(Object key)                        | 지정한 key 객체와 일치하는 key-value 객체를 삭제한다.        |
+| int size()                                  | Map에 저장된 key-value 쌍의 개수를 리턴한다.                 |
+| Collection<V> values()                      | Map에 저장된 모든 value 객체를 리턴한다.                     |
+
+Map 인터페이스에서 key는 중복을 허용하지 않으므로 keySet()의 리턴타입은 Set이고, value는 중복을 허용하기 때문에 values()의 리턴타입은 Collection이다.
+
+### Map.Entry 인터페이스
+
+Map 인터페이스의 내부 인터페이스.  
+Map에 저장되는 key-value 쌍을 다루기 위한 것이며, Map 인터페이스를 구현하는 클래스에서는 Map.Entry 인터페이스도 함께 구현해야 한다.
+
+```java
+public interface Map {
+    ...
+    interface Entry {
+        Object getKey();
+        Object getValue();
+        Object setValue(Object value);
+        boolean equals(Object o);
+        int hashCode();
+        ...
+    }
+}
+```
+
+| Method                   | 설명                                       |
+| ------------------------ | ------------------------------------------ |
+| boolean equals(Object o) | 동일한 Entry인지 비교한다.                 |
+| K getKey()               | Entry의 key 객체를 리턴한다.               |
+| V getValue()             | Entry의 value 객체를 리턴한다.             |
+| int hashCode()           | Entry의 해시코드를 리턴한다.               |
+| V setValue(V value)      | Entry의 value 객체를 지정된 객체로 바꾼다. |
+
+
+
+## 1.2 ArrayList
+
+ArrayList는 List를 구현하므로 데이터의 저장순서가 유지되고 중복을 허용한다.
+
+Object 배열을 이용해서 데이터를 순차적으로 저장한다. 따라서 모든 종류의 객체를 담을 수 있다.
+
+Vector와 구현원리 및 기능적인 측면에서 동일하지만, 가급적 Vector보다는 ArrayList를 사용하자.
+
+| Method                                                | 설명                                                         |
+| ----------------------------------------------------- | ------------------------------------------------------------ |
+| ArrayList()                                           | 크기가 0인 ArrayList를 생성                                  |
+| ArrayList(Collection<? extends E> c)                  | 주어진 Collection이 저장된 ArrayList를 생성                  |
+| ArrayList(int initialCapacity)                        | 지정된 초기용량을 갖는 ArrayList를 생성                      |
+| ArrayList(int initialCapacity, int capacityIncrement) | 지정된 초기용량과 용량의 증분을 갖는 ArrayList를 생성        |
+| boolean add(E e)                                      | ArrayList의 마지막에 객체를 추가. 성공여부를 리턴            |
+| void add(int index, E element)                        | 지정된 위치(index)에 객체를 저장                             |
+| boolean addAll(Collection<? extends E> c)             | 주어진 Collection의 모든 객체를 저장한다.                    |
+| boolean addAll(int index, Collection<? extends E> c)  | 지정된 위치(index)부터 주어진 Collection의 <br />모든 객체를 저장한다. |
+| void clear()                                          | ArrayList를 완전히 비운다.                                   |
+| Object clone()                                        | ArrayList를 복제한다.                                        |
+| boolean contains(Object o)                            | 지정된 객체(o)가 ArrayList에 포함되어 있는지 확인            |
+| void ensureCapacity(int minCapacity)                  | ArrayList의 용량이 최소한 minCapacity가 되도록 한다.         |
+| E get(int index)                                      | 지정된 위치(index)에 저장된 객체를 리턴한다.                 |
+| int indexOf(Object o)                                 | 지정된 객체가 저장된 위치를 찾아 리턴한다.                   |
+| boolean isEmpty()                                     | ArrayList가 비어있는지 확인한다.                             |
+| Iterator<E> iterator()                                | ArrayList의 Iterator 객체를 리턴                             |
+| int lastIndexOf(Object o)                             | 객체(o)가 저장된 위치를 끝부터 역방향으로 검색해서 리턴      |
+| listIterator<E> listIterator()                        | ArrayList의 ListIterator를 리턴                              |
+| listIterator<E> listIterator(int index)               | ArrayList의 지정된 위치부터 시작하는 ListIterator를 <br />리턴 |
+| E remove(int index)                                   | 지정된 위치(index)에 있는 객체를 제거한다.                   |
+| boolean remove(Object o)                              | 지정한 객체를 제거한다. 성공여부를 리턴                      |
+| boolean removeAll(Collection<?> c)                    | 지정한 Collection에 저장된 것과 동일한 객체들을 <br />ArrayList에서 제거한다. |
+| boolean retainAll(Collection<?> c)                    | ArrayList에 저장된 객체 중에서 주어진 Collection과 <br />공통된 것들만을 남기고 나머지는 삭제한다. |
+| E set(int index, E element)                           | 주어진 객체(element)를 지정된 위치(index)에 저장한다.        |
+| int size()                                            | ArrayList에 저장된 객체의 개수를 반환한다.                   |
+| void sort(Comparator<? super E> c)                    | 지정된 정렬 기준(c)으로 ArrayList를 정렬                     |
+| List<E> subList(int fromIndex, int toIndex)           | fromIndex부터 toIndex 사이에 저장된 객체를 리턴한다.         |
+| Object[] toArray()                                    | ArrayList에 저장된 모든 객체들을 객체배열로 리턴한다.        |
+| <T> T[] toArray(T[] a)                                | ArrayList에 저장된 모든 객체들을 객체배열 a에 담아 <br />리턴한다. |
+| void trimToSize()                                     | 용량을 크기에 맞게 줄인다. (빈 공간을 없앤다.)               |
+
+```java
+import java.util.ArrayList;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList list1 = new ArrayList(10);
+        list1.add(new Integer(5));
+        list1.add(new Integer(4));
+        list1.add(new Integer(2));
+        list1.add(new Integer(0));
+        list1.add(new Integer(1));
+        list1.add(new Integer(3));
+
+        ArrayList list2 = new ArrayList(list1.subList(1, 4));
+        print(list1, list2);
+
+        System.out.println("list1.containsAll(list2): " + list1.containsAll(list2));
+
+        list2.add("B");
+        list2.add("C");
+        list2.add(3, "A");
+        print(list1, list2);
+
+        list2.set(3, "AA");
+        print(list1, list2);
+
+        System.out.println("list1.retainAll(list2): " + list1.retainAll(list2));
+        print(list1, list2);
+
+        for (int i = list2.size() - 1; i >= 0; i--) {
+            if (list1.contains(list2.get(i)))
+                list2.remove(i);
+        }
+        print(list1, list2);
+    }
+
+    static void print(ArrayList list1, ArrayList list2) {
+        System.out.println("list1: " + list1);
+        System.out.println("list2: " + list2);
+        System.out.println();
+    }
+}
+```
+
+위의 코드에서 main 메소드 하단의 for문을 보면, list2에 list1과 공통되는 요소가 있을 경우 그 요소를 삭제하기 위해 list2에 대한 index를 마지막 위치부터 왼쪽으로 이동하면서 순회하고 있다. 만약 앞에서부터 순회할 경우, i번째 요소를 삭제하면 오른쪽에 있던 요소들이 왼쪽으로 전부 자리이동을 하게 되므로 정상적인 삭제가 이뤄지지 않는다.
+
+ArrayList나 Vector와 같이 배열을 이용한 자료구조는 데이터를 가져오고 저장하는 것은 성능이 좋지만, 용량을 변경해야 할 경우 새로운 배열을 생성하고 값을 복사해오는 방식이므로 성능이 상당히 떨어진다. 따라서 처음 인스턴스를 생성할 때 용량을 충분하게 잡아주는 것이 좋다.
+
+
+
+## 1.3 LinkedList
+
+Array(배열)의 단점
+
+1. 크기를 변경할 수 없다.  
+   크기를 변경하려면 resizing(새로운 배열 생성 후 데이터 copy)이 필요하다.  
+   실행속도를 향상시키려면(resizing 발생하지 않도록) 배열의 크기를 충분히 크게 해야 하므로 메모리가 낭비된다.
+2. 데이터의 비순차적인 추가 및 삭제에 시간이 많이 걸린다.  
+   차례대로 추가하거나 마지막부터 삭제하는 것은 빠르지만, 배열의 중간에 추가하거나 삭제하는 경우 다른 데이터들을 복사해야 한다.
+
+이러한 배열의 단점을 보완하기 위해 LinkedList가 고안되었다.
+
+```java
+class Node {
+    Node next;
+    Object item;
+}
+```
+
+<u>삭제</u>: 삭제하고자 하는 요소의 이전 요소가 삭제하고자 하는 요소의 다음 요소를 가리키도록 변경  
+<u>추가</u>: 새로운 요소를 생성하고, 추가하고자 하는 위치의 이전 요소는 새로운 요소를, 새로운 요소는 그 다음 요소를 가리키도록 변경
+
+```java
+// Double-Linked List
+class Node {
+    Node prev;
+    Node next;
+    Object item;
+}
+```
+
+❖ <u>Doubly Circular Linked List</u>: Double-Linked List의 첫번째 요소와 마지막 요소를 연결  
+LinkedList 클래스는 Linked List가 아닌 'Double-Linked List'로 구현되어 있음. (Linked List의 접근성 향상)
+
+<br/>
+
+### ArrayList와 LinkedList의 성능비교
+
+1. **순차적으로 추가/삭제하는 경우, ArrayList가 LinkedList보다 빠르다.**  
+   "순차적으로": 마지막 데이터부터 역순으로 추가/삭제한다.
+2. **중간 데이터를 추가/삭제하는 경우, LinkedList가 ArrayList보다 빠르다.**  
+   LinkedList는 각 요소 간의 연결만 바꿔주면 되지만, ArrayList는 각 요소들을 재배치해야 한다.
+
+LinkedList는 n번째 요소를 찾으려면 처음부터 따라가면서 찾아야 하지만, ArrayList는 탐색에 필요한 계산이 비교적 간단하다. 따라서, **LinkedList는 저장해야 하는 데이터의 개수가 많아질 수록 access time이 길어진다.**
+
+**size 변경이 거의 없다면 ArrayList, size가 자주 바뀐다면 LinkedList를 사용하는 것이 좋다.**
+
+
+
+## 1.4 Stack & Queue
+
+<u>Stack</u>: FILO(First In Last Out), ArrayList로 구현하는 것이 적합  
+<u>Queue</u>: FIFO(First In First Out), LinkedList로 구현하는 것이 적합
+
+| Method               | 설명                                                         |
+| -------------------- | ------------------------------------------------------------ |
+| boolean empty()      | Stack이 비어있는지 알려준다.                                 |
+| E peek()             | Stack의 맨 위에 저장된 객체를 리턴.<br />pop()과 달리 Stack에서 객체를 꺼내지는 않음.<br />(비어있을 경우 EmptyStackException 발생) |
+| E pop()              | Stack의 맨 위에 저장된 객체를 꺼낸다.<br />(비어있을 경우 EmptyStackException 발생) |
+| E push(E item)       | Stack에 객체(item)를 저장한다.                               |
+| int search(Object o) | Stack에서 주어진 객체(o)를 찾아서 그 위치를 리턴.<br />못찾으면 -1을 리턴. |
+
+*Stack의 method*
+
+<br/>
+
+| Method             | 설명                                                         |
+| ------------------ | ------------------------------------------------------------ |
+| boolean add(E e)   | 지정된 객체를 Queue에 추가한다. 성공여부를 리턴.<br />(저장공간이 부족하면 IllegalStateException 발생) |
+| E element()        | 삭제없이 요소를 읽어온다. peek과 달리 Queue가 비었을 때 NoSuchElementException 발생 |
+| boolean offer(E e) | Queue에 객체를 저장. 성공여부를 리턴                         |
+| E peek()           | 삭제없이 요소를 읽어온다. Queue가 비어 있으면 null을 리턴    |
+| E poll()           | Queue에서 객체를 꺼내서 리턴. 비어 있으면 null을 리턴        |
+| E remove()         | Queue에서 객체를 꺼내 리턴. 비어 있으면 NoSuchElementException 발생 |
+
+*Queue의 method*<br/>
+
+Java에서는 Stack은 클래스로 구현하여 제공하고 있지만, Queue는 Queue 인터페이스로만 정의되어 있어 Queue 인터페이스를 구현한 클래스들(Queue 인터페이스 API 문서에서 "All Known Implementing Classes" 확인)을 사용해야 한다. <br/>
+
+다음은 Stack을 활용한 예제이다(뒤로/앞으로 history).
+
+```java
+import java.util.Stack;
+
+public class Main {
+    static Stack back = new Stack();
+    static Stack forward = new Stack();
+
+    public static void main(String[] args) {
+        goURL("1) https://www.google.com");
+        goURL("2) https://www.facebook.com");
+        goURL("3) https://www.naver.com");
+        goURL("4) https://github.com");
+
+        printStatus();
+
+        goBack();
+        System.out.println("******* 뒤로 누른 후 *******");
+        printStatus();
+
+        goBack();
+        System.out.println("******* 뒤로 누른 후 *******");
+        printStatus();
+
+        goForward();
+        System.out.println("******* 앞으로 누른 후 *******");
+        printStatus();
+
+        goURL("https://www.daum.net");
+        System.out.println("******* 새로운 주소로 이동 후 *******");
+        printStatus();
+    }
+
+    public static void printStatus() {
+        System.out.println("back: " + back);
+        System.out.println("forward: " + forward);
+        System.out.println("현재 화면은: " + back.peek() + "입니다.");
+        System.out.println();
+    }
+
+    public static void goURL(String url) {
+        back.push(url);
+        if (!forward.empty())
+            forward.clear();
+    }
+
+    public static void goForward() {
+        if (!forward.empty())
+            back.push(forward.pop());
+    }
+
+    public static void goBack() {
+        if (!back.empty())
+            forward.push(back.pop());
+    }
+}
+```
+
+<br/>
+
+다음은 Queue 인터페이스의 LinkedList를 활용한 예제이다(명령어 입력 history).
+
+```java
+import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.Queue;
+import java.util.Scanner;
+
+public class Main {
+    static Queue q = new LinkedList();
+    static final int MAX_SIZE = 5;
+
+    public static void main(String[] args) {
+        System.out.println("help를 입력하면 도움말을 볼 수 있습니다.");
+
+        while (true) {
+            System.out.println(">> ");
+            try {
+                Scanner s = new Scanner(System.in);
+                String input = s.nextLine().trim();
+
+                if (input.equals(""))   continue;
+
+                if (input.equalsIgnoreCase("q")) {
+                    System.out.println("종료합니다.");
+                    System.exit(0);
+                }
+                else if (input.equalsIgnoreCase("help")) {
+                    System.out.println(" help - 도움말을 보여줍니다.");
+                    System.out.println(" q - 프로그램을 종료합니다.");
+                    System.out.println(" history - 최근에 입력한 명령어를 " + MAX_SIZE + "개 보여줍니다.");
+                }
+                else if (input.equalsIgnoreCase("history")) {
+                    int i = 0;
+
+                    LinkedList tmp = (LinkedList)q;
+                    ListIterator iterator = tmp.listIterator();
+                    while (iterator.hasNext())
+                        System.out.println(++i + ". " + iterator.next());
+                }
+                else {
+                    save(input);
+                    System.out.println(input);
+                }
+            } catch (Exception e) {
+                System.out.println("입력 오류입니다.");
+            }
+        }
+    }
+
+    public static void save(String input) {
+        if (!input.equals(""))
+            q.offer(input);
+        if (q.size() > MAX_SIZE)
+            q.remove();
+    }
+}
+```
+
+<br/>
+
+#### PriorityQueue
+
+Queue 인터페이스를 구현한 클래스 중 하나로, 저장한 순서와 무관하게 priority(우선순위)가 높은 것부터 꺼낸다.  
+저장공간으로 배열을 사용하며, heap 형태로 저장한다.
+
+```java
+import java.util.*;
+
+public class Main {
+    static Queue q = new LinkedList();
+    static final int MAX_SIZE = 5;
+
+    public static void main(String[] args) {
+        Queue pq = new PriorityQueue();
+        pq.offer(3);
+        pq.offer(1);
+        pq.offer(5);
+        pq.offer(2);
+        pq.offer(4);
+        System.out.println(pq);
+
+        Object obj = null;
+        while ((obj = pq.poll()) != null)
+            System.out.println(obj);
+    }
+}
+```
+
+<br/>
+
+#### Deque(Double-Ended Queue)
+
+Queue의 변형으로, 양방향으로 추가/삭제가 가능하다.
+
+
+
+## 1.5 Iterator, ListIterator, Enumeration
+
