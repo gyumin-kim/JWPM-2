@@ -2,7 +2,7 @@
 
 Collection Framework이란, 'data group(데이터 군)'을 다루고 표현하기 위한 단일화된 구조(architecture)이다. Collection은 다수의 데이터, 즉 데이터 그룹을 의미한다.
 
-JDK 1.2부터 Collection Framework이 추가되면서, 다양한 종류의 Collection 클래스가 추가되고 모든 Collection 클래스들을 표준화된 방식으로 다룰 수 있도록 체계화 되었다.
+JDK 1.2부터 Collection Framework이 추가되면서, 다양한 종류의 collection 클래스가 추가되고 모든 collection 클래스들을 표준화된 방식으로 다룰 수 있도록 체계화 되었다.
 
 ##### 장점
 
@@ -14,7 +14,7 @@ JDK 1.2부터 Collection Framework이 추가되면서, 다양한 종류의 Colle
 
 ## 1.1 Collection Framework의 핵심 인터페이스
 
-Collection Framework에서는 Collection(데이터 그룹)을 크게 3가지 타입이 존재한다고 가정하고, List, Set, Map의 3가지 인터페이스를 정의하였다.
+Collection Framework에서는 collection(데이터 그룹)을 크게 3가지 타입이 존재한다고 가정하고, List, Set, Map의 3가지 인터페이스를 정의하였다.
 
 ![Collection Framework의 핵심 인터페이스 간의 상속 계층도](https://t1.daumcdn.net/cfile/tistory/214F514E5952224923)
 
@@ -28,7 +28,7 @@ Collection Framework에서는 Collection(데이터 그룹)을 크게 3가지 타
   순서는 유지되지 않으며, 키는 중복을 허용하지 않고, 값은 중복을 허용한다.  
   구현 클래스: HashMap, TreeMap, Hashtable*(deprecated)*, Properties*(deprecated)*
 
-실제 개발 시 다루고자 하는 Collection의 특징을 파악하고, 어떤 인터페이스를 구현한 Collection 클래스를 사용할지 결정해야 한다.
+실제 개발 시 다루고자 하는 collection의 특징을 파악하고, 어떤 인터페이스를 구현한 collection 클래스를 사용할지 결정해야 한다.
 
 Stack, Vector, Hashtable, Properties 클래스들은 Collection Framework 이전부터 존재하던 것으로, Collection Framework의 명명법을 따르지 않으므로 가급적 사용하지 않는 것이 좋다.
 
@@ -36,20 +36,20 @@ Stack, Vector, Hashtable, Properties 클래스들은 Collection Framework 이전
 
 List와 Set의 조상.
 
-Collection 클래스에 저장된 데이터를 읽고, 추가하고 삭제하는 등 Collection을 다루는 데 가장 기본적인 메소드들을 정의하고 있다.
+collection 클래스에 저장된 데이터를 읽고, 추가하고 삭제하는 등 collection을 다루는 데 가장 기본적인 메소드들을 정의하고 있다.
 
 | Method                                                       | 설명                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| boolean add(Object o)<br />boolean addAll(Collection<? extends E> c) | 지정된 객체(o) 또는 Collection(c)의 객체들을 <br />Collection에 추가한다. |
-| void clear()                                                 | Collection의 모든 객체를 삭제한다.                           |
-| boolean contains(Object o)<br />boolean containsAll(Collection<?> c) | 지정된 객체(o) 또는 Collection(c)의 객체들이 <br />Collection에 포함되어 있는지 확인한다. |
-| boolean equals(Object o)                                     | 동일한 Collection인지 비교한다.                              |
-| int hashCode()                                               | Collection의 hash code를 리턴한다.                           |
-| boolean isEmpty()                                            | Collection이 비어있는지 확인한다.                            |
-| Iterator<E> iterator()                                       | Collection의 Iterator를 얻어서 리턴한다.                     |
+| boolean add(Object o)<br />boolean addAll(Collection<? extends E> c) | 지정된 객체(o) 또는 Collection(c)의 객체들을 <br />collection에 추가한다. |
+| void clear()                                                 | collection의 모든 객체를 삭제한다.                           |
+| boolean contains(Object o)<br />boolean containsAll(Collection<?> c) | 지정된 객체(o) 또는 Collection(c)의 객체들이 <br />collection에 포함되어 있는지 확인한다. |
+| boolean equals(Object o)                                     | 동일한 collection인지 비교한다.                              |
+| int hashCode()                                               | collection의 hash code를 리턴한다.                           |
+| boolean isEmpty()                                            | collection이 비어있는지 확인한다.                            |
+| Iterator<E> iterator()                                       | collection의 Iterator를 얻어서 리턴한다.                     |
 | boolean remove(Object o)                                     | 지정된 객체를 삭제한다.                                      |
-| boolean removeAll(Collection<?> c)                           | 지정된 Collection에 포함된 객체들을 삭제한다.                |
-| boolean retainAll(Collection<?> c)                           | 지정된 Collection에 포함된 객체만을 남기고 <br />다른 객체들은 Collection에서 삭제한다. <br />이 작업으로 인해 Collection에 변화가 있으면 true, <br />그렇지 않으면 false를 리턴한다. |
+| boolean removeAll(Collection<?> c)                           | 지정된 collection에 포함된 객체들을 삭제한다.                |
+| boolean retainAll(Collection<?> c)                           | 지정된 collection에 포함된 객체만을 남기고 <br />다른 객체들은 collection에서 삭제한다. <br />이 작업으로 인해 collection에 변화가 있으면 true, <br />그렇지 않으면 false를 리턴한다. |
 
 *(E, T, K, V 등은 모두 Object를 나타냄.)*
 
@@ -61,7 +61,7 @@ Collection 클래스에 저장된 데이터를 읽고, 추가하고 삭제하는
 
 | Method                                                       | 설명                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| void add(int index, E element)<br />boolean addAll(int index, Collection<? extends E> c) | 지정된 위치(index)에 객체(element) 또는 <br />Collection에 포함된 객체들을 추가한다. |
+| void add(int index, E element)<br />boolean addAll(int index, Collection<? extends E> c) | 지정된 위치(index)에 객체(element) 또는 <br />collection에 포함된 객체들을 추가한다. |
 | E get(int index)                                             | 지정된 위치(index)에 있는 객체를 리턴한다.                   |
 | int indexOf(Object o)                                        | 지정된 객체의 위치(index)를 리턴한다.<br />(List의 첫번째 요소부터 순방향으로 찾는다.) |
 | int lastIndexOf(Object o)                                    | 지정된 객체의 위치(index)를 리턴한다.<br />(List의 첫번째 요소부터 역방향으로 찾는다.) |
@@ -130,7 +130,7 @@ public interface Map {
 | int hashCode()           | Entry의 해시코드를 리턴한다.               |
 | V setValue(V value)      | Entry의 value 객체를 지정된 객체로 바꾼다. |
 
-
+<br/>
 
 ## 1.2 ArrayList
 
@@ -138,18 +138,18 @@ ArrayList는 List를 구현하므로 데이터의 저장순서가 유지되고 �
 
 Object 배열을 이용해서 데이터를 순차적으로 저장한다. 따라서 모든 종류의 객체를 담을 수 있다.
 
-Vector와 구현원리 및 기능적인 측면에서 동일하지만, 가급적 Vector보다는 ArrayList를 사용하자.
+Vector와 구현원리 및 기능적인 측면에서 동일하지만, 가급적 ~~Vector~~보다는 ArrayList를 사용하자.
 
 | Method                                                | 설명                                                         |
 | ----------------------------------------------------- | ------------------------------------------------------------ |
 | ArrayList()                                           | 크기가 0인 ArrayList를 생성                                  |
-| ArrayList(Collection<? extends E> c)                  | 주어진 Collection이 저장된 ArrayList를 생성                  |
+| ArrayList(Collection<? extends E> c)                  | 주어진 collection이 저장된 ArrayList를 생성                  |
 | ArrayList(int initialCapacity)                        | 지정된 초기용량을 갖는 ArrayList를 생성                      |
 | ArrayList(int initialCapacity, int capacityIncrement) | 지정된 초기용량과 용량의 증분을 갖는 ArrayList를 생성        |
 | boolean add(E e)                                      | ArrayList의 마지막에 객체를 추가. 성공여부를 리턴            |
 | void add(int index, E element)                        | 지정된 위치(index)에 객체를 저장                             |
-| boolean addAll(Collection<? extends E> c)             | 주어진 Collection의 모든 객체를 저장한다.                    |
-| boolean addAll(int index, Collection<? extends E> c)  | 지정된 위치(index)부터 주어진 Collection의 <br />모든 객체를 저장한다. |
+| boolean addAll(Collection<? extends E> c)             | 주어진 collection의 모든 객체를 저장한다.                    |
+| boolean addAll(int index, Collection<? extends E> c)  | 지정된 위치(index)부터 주어진 collection의 <br />모든 객체를 저장한다. |
 | void clear()                                          | ArrayList를 완전히 비운다.                                   |
 | Object clone()                                        | ArrayList를 복제한다.                                        |
 | boolean contains(Object o)                            | 지정된 객체(o)가 ArrayList에 포함되어 있는지 확인            |
@@ -163,8 +163,8 @@ Vector와 구현원리 및 기능적인 측면에서 동일하지만, 가급적 
 | listIterator<E> listIterator(int index)               | ArrayList의 지정된 위치부터 시작하는 ListIterator를 <br />리턴 |
 | E remove(int index)                                   | 지정된 위치(index)에 있는 객체를 제거한다.                   |
 | boolean remove(Object o)                              | 지정한 객체를 제거한다. 성공여부를 리턴                      |
-| boolean removeAll(Collection<?> c)                    | 지정한 Collection에 저장된 것과 동일한 객체들을 <br />ArrayList에서 제거한다. |
-| boolean retainAll(Collection<?> c)                    | ArrayList에 저장된 객체 중에서 주어진 Collection과 <br />공통된 것들만을 남기고 나머지는 삭제한다. |
+| boolean removeAll(Collection<?> c)                    | 지정한 collection에 저장된 것과 동일한 객체들을 <br />ArrayList에서 제거한다. |
+| boolean retainAll(Collection<?> c)                    | ArrayList에 저장된 객체 중에서 주어진 collection과 <br />공통된 것들만을 남기고 나머지는 삭제한다. |
 | E set(int index, E element)                           | 주어진 객체(element)를 지정된 위치(index)에 저장한다.        |
 | int size()                                            | ArrayList에 저장된 객체의 개수를 반환한다.                   |
 | void sort(Comparator<? super E> c)                    | 지정된 정렬 기준(c)으로 ArrayList를 정렬                     |
@@ -222,7 +222,7 @@ public class Main {
 
 ArrayList나 Vector와 같이 배열을 이용한 자료구조는 데이터를 가져오고 저장하는 것은 성능이 좋지만, 용량을 변경해야 할 경우 새로운 배열을 생성하고 값을 복사해오는 방식이므로 성능이 상당히 떨어진다. 따라서 처음 인스턴스를 생성할 때 용량을 충분하게 잡아주는 것이 좋다.
 
-
+<br/>
 
 ## 1.3 LinkedList
 
@@ -258,8 +258,6 @@ class Node {
 ❖ <u>Doubly Circular Linked List</u>: Double-Linked List의 첫번째 요소와 마지막 요소를 연결  
 LinkedList 클래스는 Linked List가 아닌 'Double-Linked List'로 구현되어 있음. (Linked List의 접근성 향상)
 
-<br/>
-
 ### ArrayList와 LinkedList의 성능비교
 
 1. **순차적으로 추가/삭제하는 경우, ArrayList가 LinkedList보다 빠르다.**  
@@ -271,7 +269,7 @@ LinkedList는 n번째 요소를 찾으려면 처음부터 따라가면서 찾아
 
 **size 변경이 거의 없다면 ArrayList, size가 자주 바뀐다면 LinkedList를 사용하는 것이 좋다.**
 
-
+<br/>
 
 ## 1.4 Stack & Queue
 
@@ -459,7 +457,226 @@ public class Main {
 
 Queue의 변형으로, 양방향으로 추가/삭제가 가능하다.
 
-
+<br/>
 
 ## 1.5 Iterator, ListIterator, Enumeration
+
+컬렉션에 저장된 요소를 접근하는 데 사용되는 인터페이스.
+
+### Iterator
+
+```java
+public interface Iterator {
+    boolean hasNext();
+    Object next();
+    void remove();
+}
+
+public interface Collection {
+    ...
+    public Iterator iterator();
+    ...
+}
+```
+
+`itertor()`는 Collection 인터페이스에 정의된 메소드이므로, List나 Set 인터페이스를 구현하는 collection은 Iterator()가 각 collection의 특징에 알맞게 작성되어 있다. collection 클래스에 대해 iterator()를 호출하여 Iterator를 얻은 다음, 반복문(주로 while문)을 사용해서 collection 클래스의 요소들을 읽어올 수 있다.
+
+| Method            | 설명                                                         |
+| ----------------- | ------------------------------------------------------------ |
+| boolean hasNext() | 읽어올 요소가 남아있는지 확인한다. 있으면 true, 없으면 false를 리턴한다. |
+| Object next()     | 다음 요소를 읽어온다. <br />next()를 호출하기 전에 hasNext()를 호출해서 읽어올 요소가 있는지 확인하는 것이 안전하다. |
+| void remove()     | next()로 읽어온 요소를 삭제한다. next()를 호출한 다음에 remove()를 호출해야 한다. <br />(선택적 기능) |
+
+<br/>
+
+```java
+List list = new ArrayList();
+Iterator it = list.iterator();
+while (it.hasNext()) {
+    System.out.println(it.next());
+}
+```
+
+ArrayList 대신 List 인터페이스를 구현한 다른 collection 클래스에 대해서도 동일하게 사용할 수 있다.
+
+Map 인터페이스를 구현한 collection 클래스는 iterator()를 직접 호출할 수 없고, 대신 keySet()이나 entrySet()과 같은 메소드를 통해 key와 value를 각각 따로 Set의 형태로 얻어온 후 다시 iterator()를 호출한다.
+
+```java
+Map map = new HashMap();
+...
+Iterator it = map.keySet().iterator();
+```
+
+<br>
+
+### ListIterator & Enumeration
+
+Enumertaion은 Iterator의 구버전이므로, 가급적 ~~Enumertaion~~ 대신 Iterator를 사용한다.
+
+ListIteratorsms Iterator를 상속받아 기능을 추가한 것으로, Iterator는 단방향으로만 이동할 수 있지만 ListIterator는 양방향으로의 이동이 가능하다. 단 ArrayList나 LinkedList 같은 List 인터페이스를 구현한 collection에서만 사용할 수 있다.
+
+| Method                | 설명                                                         |
+| --------------------- | ------------------------------------------------------------ |
+| void add(E e)         | collection에 새로운 객체(e)를 추가한다. (선택적 기능)        |
+| boolean hasNext()     | 읽어올 다음 요소가 남아있는지 확인한다.<br />있으면 true, 없으면 false를 리턴한다. |
+| boolean hasPrevious() | 읽어올 이전 요소가 남아있는지 확인한다.<br />있으면 true, 없으면 false를 리턴한다. |
+| E next()              | 다음 요소를 읽어온다. next()를 호출하기 전에 hasNext()를 호출해서 <br />읽어올 요소가 있는지 확인하는 것이 안전하다. |
+| E previous()          | 이전 요소를 읽어온다. previous()를 호출하기 전에 hasprevious()를 호출해서 <br />읽어올 요소가 있는지 확인하는 것이 안전하다. |
+| int nextIndex()       | 다음 요소의 index를 리턴한다.                                |
+| int previousIndex()   | 이전 요소의 index를 리턴한다.                                |
+| void remove()         | next() 또는 previous()로 읽어온 요소를 삭제한다.<br />반드시 next()나 previous()를 먼저 호출한 후 remove()를 호출해야 한다. (선택적 기능) |
+| void set(E e)         | next() 또는 previous()로 읽어온 요소를 지정된 객체(e)로 변경한다.<br />반드시 next()나 previous()를 먼저 호출한 후 set()을 호출해야 한다. (선택적 기능) |
+
+```java
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        ArrayList list = new ArrayList();
+        list.add("1");
+        list.add("2");
+        list.add("3");
+        list.add("4");
+        list.add("5");
+
+        ListIterator it = list.listIterator();
+        while (it.hasNext()) {
+            System.out.print(it.next());		// 12345
+        }
+        System.out.println();
+
+        while (it.hasPrevious()) {
+            System.out.print(it.previous());	// 54321
+        }
+    }
+}
+```
+
+ListIterator는 양방향으로 이동하며 각 요소간의 이동이 자유롭다.
+
+<br>
+
+## 1.6 Arrays
+
+### 배열의 복사
+
+copyOf(), copyOfRange()
+
+```java
+int[] arr = {0, 1, 2, 3, 4};
+int[] arr2 = Arrays.copyOf(arr, arr.length);    // [0, 1, 2, 3, 4]
+int[] arr3 = Arrays.copyOf(arr, 3);  			// [0, 1, 2]  
+int[] arr4 = Arrays.copyOf(arr, 7);  			// [0, 1, 2, 3, 4, 0, 0]
+        
+int[] arr5 = Arrays.copyOfRange(arr, 2, 4);   	// [2, 3]
+int[] arr6 = Arrays.copyOfRange(arr, 0, 7);   	// [0, 1, 2, 3, 4, 0, 0]
+```
+
+<br>
+
+### 배열 채우기
+
+fill(), setAll()
+
+```java
+int[] arr = new int[5];
+Arrays.fill(arr, 9);									// [9, 9, 9, 9, 9]
+Arrays.setAll(arr, i -> (int) (Math.random() * 5) + 1);	// [2, 1, 2, 4, 5]
+```
+
+<br>
+
+### 배열의 정렬과 검색
+
+sort(), binarySearch()
+
+`sort()`는 배열을 정렬할 때 쓰인다. `binarySearch(int[] a, int key)`는 배열(a)에서 지정된 값(key)이 저장된 위치를 찾아 리턴하는데, binary search(이진 탐색) 알고리즘은 정렬된 배열에 적용가능하므로, binarySearch() 역시 정렬된 상태에서 적용해야 올바른 결과를 얻을 수 있다.
+
+```java
+int[] arr = {3, 2, 0, 1, 4};
+System.out.println("값 2의 index = " + Arrays.binarySearch(arr, 2));	// -5
+
+Arrays.sort(arr);
+System.out.println("정렬 후: " + Arrays.toString(arr));
+System.out.println("값 2의 index = " + Arrays.binarySearch(arr, 2));	// 2
+```
+
+<br>
+
+### 문자열의 비교와 출력
+
+equals(), toString(), deepEquals(), deepToString()
+
+`toString()`은 1차원 배열에만, `deepToString()`은 다차원 배열에 사용한다.
+
+```java
+int[] arr = {0, 1, 2, 3, 4};
+int[][] arr2D = {{11, 12}, {21, 22}};
+
+System.out.println(Arrays.toString(arr));		// [0, 1, 2, 3, 4]
+System.out.println(Arrays.deepToString(arr2D));	// [[11, 12], [21, 22]]
+```
+
+`equals()`는 1차원 배열에만, `deepEquals()`는 다차원 배열에 사용한다.
+
+```java
+String[][] str2D = new String[][]{{"aaa", "bbb"}, {"AAA", "BBB"}};
+String[][] str2D2 = new String[][]{{"aaa", "bbb"}, {"AAA", "BBB"}};
+
+System.out.println(Arrays.equals(str2D, str2D2));		// false
+System.out.println(Arrays.deepEquals(str2D, str2D2));	// true
+```
+
+<br>
+
+### 배열을 List로 변환
+
+asList(Object... a)
+
+`asList()`는 배열을 List에 담아서 리턴한다. 단 리턴된 List의 크기를 변경할 수 없다. 즉 추가/삭제가 불가능하다. 
+
+```java
+List list = Arrays.asList(new Integer[]{1, 2, 3, 4, 5});
+Iterator it = list.iterator();
+while (it.hasNext()) {
+    System.out.print(it.next());		// 12345
+}
+System.out.println();
+
+List list2 = Arrays.asList(1, 2, 3, 4, 5);
+Iterator it2 = list2.iterator();
+while (it2.hasNext()) {
+    System.out.print(it2.next());		// 12345
+}
+
+list.add(6);							// UnsupportedOperationException 에러 발생
+```
+
+가변적인 List는 다음과 같이 만든다.
+
+```java
+List list = new ArrayList(Arrays.asList(1, 2, 3, 4, 5));
+Iterator it = list.iterator();
+while (it.hasNext()) {
+    System.out.print(it.next());
+}
+
+list.add(6);		// 크기 변경 가능
+```
+
+<br>
+
+## 1.7 Comparator & Comparable
+
+```markdown
+Comparable: 기본 정렬기준을 구현하는 데 사용
+Comparator: 기본 정렬기준 외에 다른 기준으로 정렬하고자 할 때 사용
+```
+
+`Arrays.sort()`는 배열을 정렬할 때, Comparator를 지정해주지 않으면, 저장하는 객체(주로 Comparable을 구현한 클래스의 객체)에 구현된 내용에 따라 정렬된다.
+
+<br>
+
+## 1.8 HashSet
 
