@@ -1,4 +1,4 @@
-# Collection Framework 정리
+# jaCollection Framework 정리
 
 Collection Framework이란, 'data group(데이터 군)'을 다루고 표현하기 위한 단일화된 구조(architecture)이다. Collection은 다수의 데이터, 즉 데이터 그룹을 의미한다.
 
@@ -12,7 +12,7 @@ JDK 1.2부터 Collection Framework이 추가되면서, 다양한 종류의 colle
 
 
 
-## 1.1 Collection Framework의 핵심 인터페이스
+## 1. Collection Framework의 핵심 인터페이스
 
 Collection Framework에서는 collection(데이터 그룹)을 크게 3가지 타입이 존재한다고 가정하고, List, Set, Map의 3가지 인터페이스를 정의하였다.
 
@@ -132,7 +132,7 @@ public interface Map {
 
 <br/>
 
-## 1.2 ArrayList
+## 2. ArrayList
 
 ArrayList는 List를 구현하므로 데이터의 저장순서가 유지되고 중복을 허용한다.
 
@@ -224,7 +224,7 @@ ArrayList나 Vector와 같이 배열을 이용한 자료구조는 데이터를 �
 
 <br/>
 
-## 1.3 LinkedList
+## 3. LinkedList
 
 Array(배열)의 단점
 
@@ -271,7 +271,7 @@ LinkedList는 n번째 요소를 찾으려면 처음부터 따라가면서 찾아
 
 <br/>
 
-## 1.4 Stack & Queue
+## 4. Stack & Queue
 
 <u>Stack</u>: FILO(First In Last Out), ArrayList로 구현하는 것이 적합  
 <u>Queue</u>: FIFO(First In First Out), LinkedList로 구현하는 것이 적합
@@ -459,7 +459,7 @@ Queue의 변형으로, 양방향으로 추가/삭제가 가능하다.
 
 <br/>
 
-## 1.5 Iterator, ListIterator, Enumeration
+## 5. Iterator, ListIterator, Enumeration
 
 컬렉션에 저장된 요소를 접근하는 데 사용되는 인터페이스.
 
@@ -557,7 +557,7 @@ ListIterator는 양방향으로 이동하며 각 요소간의 이동이 자유�
 
 <br>
 
-## 1.6 Arrays
+## 6. Arrays
 
 ### 배열의 복사
 
@@ -667,16 +667,418 @@ list.add(6);		// 크기 변경 가능
 
 <br>
 
-## 1.7 Comparator & Comparable
+## 7. Comparator & Comparable
 
 ```markdown
 Comparable: 기본 정렬기준을 구현하는 데 사용
 Comparator: 기본 정렬기준 외에 다른 기준으로 정렬하고자 할 때 사용
 ```
 
-`Arrays.sort()`는 배열을 정렬할 때, Comparator를 지정해주지 않으면, 저장하는 객체(주로 Comparable을 구현한 클래스의 객체)에 구현된 내용에 따라 정렬된다.
+Collections의 sort() 메소드는 2가지로 overloading 되어 있다.
+
+**Collections.sort()**: `public static <T extends Comparable<? super T>> void sort(List<T> list)`  
+Method Detail에 보면 "<u>All elements in the list must implement the [`Comparable`](https://docs.oracle.com/javase/7/docs/api/java/lang/Comparable.html) interface.</u>"라고 되어 있다. 즉 sort()에 매개변수로 들어가는 List의 내부에 저장된 클래스에서 `Comparable` 인터페이스를 구현해야만 한다. `Comparable` 인터페이스에는 1개의 `compareTo()`라는 메소드가 선언되어 있으므로, List 내부에 저장된 클래스에서 `compareTo()`를 오버라이딩 해야 한다. 이 때 어떤 식으로 정렬할 것인지를 재정의한다.  
+<u>int compareTo(T o)</u>:
+Compares this object with the specified object for order. Returns a negative integer, zero, or a positive integer as this object is less than, equal to, or greater than the specified object.
+
+즉, `Comparable` 인터페이스를 구현한 객체는 `compareTo()`를 구현 및 사용하여 정렬 가능
 
 <br>
 
-## 1.8 HashSet
+나만의 비교 기준을 만들고 싶다면, `Comparator` 인터페이스를 구현하는 클래스를 직접 만든다. Comparator 인터페이스의 `compare(T o1, T o2)`를 overriding한다.
+
+**Collections.sort()**: `public static <T> void sort(List<T> list, Comparator<? super T> c)`  
+이 경우는 compare() 메소드를 구현한다.  
+<u>int compare(T o1, T o2)</u>:
+Compares its two arguments for order. Returns a negative integer, zero, or a positive integer as the first argument is less than, equal to, or greater than the second.
+
+`Comparator`를 지정해주지 않으면, 저장하는 객체(주로 Comparable을 구현한 클래스의 객체)에 구현된 내용에 따라 정렬된다.
+
+<br>
+
+## 8. HashSet
+
+Set 인터페이스의 특징:  
+중복된 요소를 저장하지 않는다. 만약 이미 저장되어 있는 요소를 add하려고 하면, false를 리턴한다.  
+저장순서를 유지하지 않는다. 순서를 유지하고자 한다면 LinkedHashSet을 사용해야 한다.
+
+**HashSet의 메소드**:  [HashSet (Java Platform SE 8 ) - Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html) 참조
+
+```java
+Object[] objArr = { "1", new Integer(1), "2", "3", "2", "4", "3", "3", "4", "4" };
+Set set = new HashSet();
+
+for (int i = 0; i < objArr.length; i++)
+    set.add(objArr[i]);
+
+System.out.println(set);
+```
+
+이미 같은 객체가 있으면 중복으로 간주하고 저장하지 않으며, false를 리턴한다. 또한 순서를 유지하지 않아, 저장한 순서와 다른 것을 알 수 있다.
+
+```java
+Set set = new HashSet();
+
+for (int i = 0; set.size() < 6; i++) {
+    int num = (int)(Math.random() * 45) + 1;
+    set.add(new Integer(num));
+}
+
+List list = new LinkedList(set);
+Collections.sort(list);
+System.out.println(list);
+```
+
+<br>
+
+```java
+public class Main {
+
+    public static void main(String[] args) {
+        Set set = new HashSet();
+
+        set.add(new String("abc"));
+        set.add(new String("abc"));
+        set.add(new Person("David", 10));
+        set.add(new Person("David", 10));
+
+        System.out.println(set);
+    }
+}
+
+class Person {
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return name + ": " + age;
+    }
+}
+```
+
+위의 코드에서, set을 출력하면 같은 값을 가진 두 인스턴스가 각각 출력된다.  
+HashSet의 add 메소드는 새로운 요소를 추가하기 전에 이미 저장된 요소와 같은 것인지 판별하기 위해, 추가하려는 요소의 `equals()`와 `hashCode()`를 호출한다. 따라서 Person 클래스에서 이를 목적에 맞게 overriding해야 한다.
+
+```java
+@Override
+public boolean equals(Object obj) {
+    if (obj instanceof Person) {
+        Person tmp = (Person) obj;
+        return name.equals(tmp.name) && age == tmp.age;
+    }
+    return false;
+}
+
+@Override
+public int hashCode() {
+	// return (name + age).hashCode();
+    return Objects.hash(name, age);
+}
+```
+
+두 인스턴스의 name과 age가 같으면 `equals()`에서 true를 리턴하도록 하였다. `hashCode()`는 String 클래스의 것을 이용하거나, JDK 1.8부터 추가된 java.util.Objects 클래스의 `hash()`에 클래스의 인스턴스 변수들을 인자로 넣어주면 된다.
+
+<br>
+
+오버라이딩을 통해 작성된 **hashCode()는 다음 3가지 조건**을 만족시켜야 한다(The general contract of hashCode)
+
+- 실행 중인 애플리케이션 내의 동일한 객체에 대해 여러 번 `hashCode()`를 호출해도, 동일한 값이 리턴되어야 한다. 단 실행 할 때마다 계속 같은 값을 유지하고 있을 필요는 없다.
+- `equals(Object)`에 의해 두 객체가 같은 것으로 나왔을 경우, 두 객체에 대해 `hashCode()`를 호출한 결과는 반드시 같아야 한다.
+- `equals(Object)`에 의해 두 객체가 다른 것으로 나왔다 하더라도, 두 객체에 대해 `hashCode()`를 호출한 결과가 반드시 unique한 값이어야 하는 것은 아니다. 그러나, 서로 다른 객체는 각각의 unique한 hash code를 갖는 것이 hash table의 성능을 향상시킬 수 있다.
+
+두 객체에 대해 `equals()`를 호출한 결과가 true이면, 두 객체의 hash code는 반드시 같아야 하지만, 두 객체의 hash code가 같다고 해서 `equals()`의 리턴값이 반드시 true이어야 하는 것은 아니다.
+
+<br>
+
+## 9. TreeSet
+
+binary search tree(이진검색 트리) 형태로 데이터를 저장하며, 정렬, 검색, 범위 검색에 높은 성능을 보인다.  
+저장할 때는 저장위치를 찾아야 하고, 삭제할 때는 트리의 일부를 재구성해야 하므로 linked list보다 성능이 떨어지지만, 검색과 정렬 기능은 더 뛰어나다.
+
+```java
+class TreeNode {
+	TreeNode left;
+	Object element;
+	TreeNode right;
+}
+```
+
+부모노드의 왼쪽에는 부모노드의 값보다 작은 값이, 오른쪽에는 큰 값이 위치한다.
+
+**TreeSet의 메소드**:  
+[TreeSet (Java Platform SE 8 ) - Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html) 참조
+
+<br>
+
+```java
+Set set = new TreeSet();
+
+for (int i = 0; set.size() < 6; i++) {
+    int num = (int)(Math.random() * 45) + 1;
+    set.add(num);
+}
+
+System.out.println(set);
+```
+
+TreeSet은 저장할 때 바로 정렬되므로, 따로 정렬할 필요가 없다.
+
+<br>
+
+```java
+TreeSet set = new TreeSet();
+
+String from = "b";
+String to = "d";
+
+set.add("abc");
+set.add("alien");
+set.add("bat");
+set.add("car");
+set.add("Car");
+set.add("disc");
+set.add("dance");
+set.add("dZZZZ");
+set.add("dzzzz");
+set.add("elephant");
+set.add("elevator");
+set.add("fan");
+set.add("flower");
+
+System.out.println(set);
+System.out.println("range search: from " + from + " to" + to);
+System.out.println("result1: " + set.subSet(from, to));
+// [bat, car]
+System.out.println("result2: " + set.subSet(from, to + "zzz"));
+// [bat, car, dZZZZ, dance, disc]
+```
+
+```java
+TreeSet set = new TreeSet();
+int[] score = {80, 95, 50, 35, 45, 65, 10, 100};
+
+for (int i = 0; i < score.length; i++)
+set.add(score[i]);
+
+System.out.println("50보다 작은 값: " + set.headSet(50));
+System.out.println("50보다 큰 값: " + set.tailSet(50));
+```
+
+<br>
+
+## 10. HashMap
+
+```java
+public class HashMap extends AbstractMap implements Map, Cloneable, Serializable {
+    transient Entry[] table;
+    ...
+    static class Entry implements Map.Entry {
+        final Object key;
+        Object value;
+        ...
+    }
+}
+```
+
+key와 value는 별개의 값이 아니라 서로 관련된 값이므로, 하나의 클래스(Entry)로 정의한 뒤 HashMap에서는 그것들을 배열(Entry[] table)로 다루고 있다.
+
+key는 collection 내의 key들 중에서 유일해야 하며, value는 중복을 허용한다.
+
+**HashMap의 메소드**:  
+[HashMap (Java Platform SE 8 ) - Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/HashMap.html) 참조
+
+```java
+HashMap map = new HashMap();
+map.put("myId", "1234");
+map.put("asdf", "1111");
+map.put("asdf", "1234");
+
+Scanner s = new Scanner(System.in);
+
+while (true) {
+    System.out.println("id와 password 입력");
+    System.out.print("id: ");
+    String id = s.nextLine().trim();
+    System.out.print("password: ");
+    String password = s.nextLine().trim();
+    System.out.println();
+    
+    if (!map.containsKey(id)) {
+        System.out.println("ID가 존재하지 않습니다.");
+        continue;
+    }
+    else {
+        if(!(map.get(id)).equals(password))
+            System.out.println("비밀번호 불일치");
+        else {
+            System.out.println("로그인 성공");
+            break;
+        }
+    }
+}
+```
+
+<br>
+
+```java
+HashMap map = new HashMap();
+map.put("Kim", new Integer(90));
+map.put("Kim", new Integer(100));
+map.put("Lee", new Integer(100));
+map.put("Kang", new Integer(80));
+map.put("Ahn", new Integer(90));
+
+Set set = map.entrySet();
+Iterator it = set.iterator();
+
+while (it.hasNext()) {
+    Map.Entry e = (Map.Entry)it.next();
+    System.out.println("이름: " + e.getKey() + ", 점수: " + e.getValue());
+}
+
+set = map.keySet(); // set이 key만 갖는다.
+System.out.println("참가자 명단: " + set);
+
+int total = 0;
+Collection values = map.values();
+it = values.iterator();
+
+while (it.hasNext()) {
+    Integer i = (Integer)it.next();
+    total += i.intValue();
+}
+
+System.out.println("총점: " + total);
+System.out.println("평균: " + (float)total/set.size());
+System.out.println("최고점: " + Collections.max(values));
+System.out.println("최저점: " + Collections.min(values));
+```
+
+```java
+static HashMap phoneBook = new HashMap();
+
+public static void main(String[] args) {
+    addPhoneNo("친구", "Lee", "010-3434-3842");
+    addPhoneNo("친구", "Kim", "010-1234-8373");
+    addPhoneNo("친구", "Kim", "010-6342-8402");
+    addPhoneNo("회사", "Kim", "010-1111-2222");
+    addPhoneNo("회사", "Kim", "010-3333-4444");
+    addPhoneNo("회사", "Park", "010-5555-6666");
+    addPhoneNo("회사", "Lee", "010-3333-2342");
+    addPhoneNo("세탁소", "02-342-2342");
+
+    printList();
+}
+
+static void addGroup(String groupName) {
+    if (!phoneBook.containsKey(groupName))
+        phoneBook.put(groupName, new HashMap());
+}
+
+static void addPhoneNo(String groupName, String name, String tel) {
+    addGroup(groupName);
+    HashMap group = (HashMap)phoneBook.get(groupName);
+    group.put(tel, name);
+}
+
+static void addPhoneNo(String name, String tel) {
+    addPhoneNo("기타", name, tel);
+}
+
+static void printList() {
+    Set set = phoneBook.entrySet();
+    Iterator it = set.iterator();
+
+    while (it.hasNext()) {
+        Map.Entry e = (Map.Entry)it.next();
+        Set subSet = ((HashMap)e.getValue()).entrySet();
+        Iterator subIt = subSet.iterator();
+        System.out.println(e.getKey() + "[" + subSet.size() + "]");
+
+        while (subIt.hasNext()) {
+            Map.Entry subE = (Map.Entry)subIt.next();
+            String tel = (String)subE.getKey();
+            String name = (String)subE.getValue();
+            System.out.println(tel + " " + name);
+        }
+        System.out.println();
+    }
+}
+```
+
+<br>
+
+#### hashing과 hash 함수
+
+key값이 달라도 hash code 값은 다를 수 있다. 물론 hash table의 성능을 위해서는 각 key마다 모두 다른 hash code를 갖는 것이 좋다.
+
+![HashMap에 저장된 데이터를 찾는 과정](./pictures/HashMap.jpeg)
+
+array에 비해 linked list는 순차 탐색, 즉 시간이 오래 걸리므로, 중복된 해시코드를 최소화하여 한 bucket에 들어가는 데이터를 최대한 적게 만드는 것이 탐색시간을 향상시키는 데 도움이 된다.
+
+String 클래스의 `hashCode()`는 문자열의 내용으로 hash code를 생성한다. 따라서 서로 다른 String 인스턴스라도 내용이 같으면 같은 hash code를 얻게 된다.
+
+서로 다른 두 객체에 대해 `equals()`로 비교한 결과가 true이면서 `hashCode()`의 값도 같아야 논리적으로 같은 객체로 인식한다. 새로운 클래스를 정의할 때, `equals()`를 override해야 한다면, `hashCode()`도 같이 override해서, `equals()`의 결과가 true인 두 객체의 hash code가 항상 같도록 해주어야 한다.
+
+<br>
+
+## 11. TreeMap
+
+**검색**의 경우에는 대부분 HashMap이 ~~TreeMap~~보다 성능이 우수하고, **범위검색**이나 **정렬**의 경우 TreeMap이 더 좋다.
+
+**TreeMap의 메소드**:  
+[TreeMap (Java Platform SE 8 ) - Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html) 참조
+
+<br>
+
+## 12. Properties
+
+HashMap의 구버전인 Hashtable을 상속받아 구현한 것으로, (String, String) 형태로 저장한다.
+
+주로 애플리케이션의 환경설정과 관련된 속성(property)를 저장하는 데 사용되며, 데이터를 파일로부터 읽고 쓰는 기능을 제공해 간단한 입출력에 사용할 수 있다.
+
+**Properties의 메소드**:  
+[Properties (Java Platform SE 8 ) - Oracle Docs](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html) 참조
+
+```java
+public static void main(String[] args) {
+    Properties prop = new Properties();
+
+    prop.setProperty("timeout", "30");
+    prop.setProperty("language", "kr");
+    prop.setProperty("size", "10");
+    prop.setProperty("capacity", "10");
+
+    Enumeration e = prop.propertyNames();
+
+    while (e.hasMoreElements()) {
+        String element = (String)e.nextElement();
+        System.out.println(element + " = " + prop.getProperty(element));
+    }
+
+    System.out.println();
+    prop.setProperty("size", "20");
+    System.out.println("size = " + prop.getProperty("size"));
+    System.out.println("capacity = " + prop.getProperty("capacity", "20"));
+    System.out.println("loadfactor = " + prop.getProperty("loadfactor", "0.75"));
+    System.out.println(prop);
+    prop.list(System.out);
+}
+```
+
+<br>
+
+## 13. Collections
+
+<br>
+
+## 14. Collection 클래스 정리 및 요약
+
+![Collection 클래스 요약](./pictures/CollectionSummary.jpg)
 
