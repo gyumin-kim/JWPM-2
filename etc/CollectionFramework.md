@@ -1018,7 +1018,7 @@ static void printList() {
 
 key값이 달라도 hash code 값은 다를 수 있다. 물론 hash table의 성능을 위해서는 각 key마다 모두 다른 hash code를 갖는 것이 좋다.
 
-![HashMap에 저장된 데이터를 찾는 과정](./pictures/HashMap.jpeg)
+![HashMap에 저장된 데이터를 찾는 과정](../pictures/HashMap.jpeg)
 
 array에 비해 linked list는 순차 탐색, 즉 시간이 오래 걸리므로, 중복된 해시코드를 최소화하여 한 bucket에 들어가는 데이터를 최대한 적게 만드는 것이 탐색시간을 향상시키는 데 도움이 된다.
 
@@ -1080,5 +1080,5 @@ public static void main(String[] args) {
 
 ## 14. Collection 클래스 정리 및 요약
 
-![Collection 클래스 요약](./pictures/CollectionSummary.jpg)
+![Collection 클래스 요약](../pictures/CollectionSummary.jpg)
 
