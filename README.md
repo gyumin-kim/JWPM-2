@@ -10,6 +10,7 @@
 
 > - [2018/09/11](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180911.md): Java I/O(detail), Exception, `FileExam01-06`, `CopyUtil`, `IOExam01-04`
 > - [2018/09/13](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180913.md): Database Programming, SQL, Maven Project, Connection・PreparedStatement・ResultSet
+> - [2018/09/14](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180914.md): Thread, Lambda interface, 공유 객체, *향후 로드맵*
 
 ## Etc.
 
