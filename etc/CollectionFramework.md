@@ -1,4 +1,4 @@
-# jaCollection Framework 정리
+# Collection Framework 정리
 
 Collection Framework이란, 'data group(데이터 군)'을 다루고 표현하기 위한 단일화된 구조(architecture)이다. Collection은 다수의 데이터, 즉 데이터 그룹을 의미한다.
 
