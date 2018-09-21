@@ -12,6 +12,11 @@
 > - [2018/09/13](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180913.md): Database Programming, SQL, Maven Project, Connection・PreparedStatement・ResultSet
 > - [2018/09/14](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180914.md): Thread, Lambda interface, 공유 객체, *향후 로드맵*
 
+
+> - [2018/09/17](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180917.md): Thread, I/O, Socket을 이용한 채팅 프로그램 만들기
+> - [2018/09/18](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180918.md): URL 형식, HTTP protocol(요청-응답 모델)
+> - [2018/09/21](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180921.md): MiniWAS ↔︎ WebApp, Maven Local Repository, Jackson databind(ObjectMapper)
+
 ## Etc.
 
 > - [java.lang / java.util package 정리](https://github.com/gyumin-kim/JWPM-2/blob/master/etc/java.lang_java.util_package.md)
