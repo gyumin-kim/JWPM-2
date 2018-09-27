@@ -17,6 +17,9 @@
 > - [2018/09/18](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180918.md): URL 형식, HTTP protocol(요청-응답 모델)
 > - [2018/09/21](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180921.md): MiniWAS ↔︎ WebApp, Maven Local Repository, Jackson databind(ObjectMapper)
 
+
+> - [2018/09/27](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/180927.md): Java 웹프로그래밍, IDE에서 WAS(Tomcat) 설정하기, Web Application의 구조, IntelliJ IDEA Ultimate에서 웹 애플리케이션 생성하기, Dependency scope, Servlet Lifecycle, IoC
+
 ## Etc.
 
 > - [java.lang / java.util package 정리](https://github.com/gyumin-kim/JWPM-2/blob/master/etc/java.lang_java.util_package.md)
