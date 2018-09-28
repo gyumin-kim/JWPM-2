@@ -26,4 +26,5 @@
 > - [Collection Framework 정리](https://github.com/gyumin-kim/JWPM-2/blob/master/etc/CollectionFramework.md)
 > - [GitHub 특강](https://github.com/gyumin-kim/JWPM-2/blob/master/etc/Github_lecture.md)
 > - [Lambda Expression](https://github.com/gyumin-kim/JWPM-2/blob/master/etc/LambdaExpression.md)
+> - [Multi Thread](https://github.com/gyumin-kim/JWPM-2/blob/master/etc/MultiThread.md)
 
