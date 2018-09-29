@@ -711,3 +711,53 @@ public class PrintThread2 extends Thread {
 }
 ```
 
+<br>
+
+## 데몬(daemon) 스레드
+
+데몬(daemon) 스레드는 메인 스레드의 작업을 돕는 보조적인 역할을 수행하는 스레드이다. 따라서 메인 스레드가 종료되면 데몬 스레드는 강제적으로 종료된다. 데몬 스레드는 메인 스레드의 보조 역할이기 때문이다.
+
+스레드를 데몬으로 만들기 위해서는 데몬이 될 스레드의 `setDaemon(true)`를 메인 스레드가 호출해주면 된다. 
+
+단 주의할 점은 `start()`가 호출되고 나서 `setDaemon(true)`를 호출하면 `IllegalThreadStateException`이 발생하므로, 반드시 `start()` 전에 `setDaemon(true)`를 호출해야 한다. 또한 현재 실행 중인 스레드가 데몬 스레드인지 구별하기 위해서 `isDaemon()`을 호출할 수 있는데, 데몬 스레드일 경우 true를 리턴한다.
+
+```java
+public class AutoSaveThread extends Thread {
+    public void save() {
+        System.out.println("작업 내용을 저장함");
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ie) {
+                break;
+            }
+            save();
+        }
+    }
+}
+```
+
+```java
+public class DaemonExample {
+    public static void main(String[] args) {
+        AutoSaveThread autoSaveThread = new AutoSaveThread();
+        autoSaveThread.setDaemon(true);
+        autoSaveThread.start();
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException ie) {}
+
+        System.out.println("메인 스레드 종료");
+    }
+}
+```
+
+<br>
+
+
+
