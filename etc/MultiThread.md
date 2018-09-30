@@ -810,9 +810,9 @@ ThreadGroup tg = new ThreadGroup(ThreadGroup parent, String name);
 
 ```java
 Thread t = new Thread(ThreadGroup group, Runnable target);
-        Thread t = new Thread(ThreadGroup group, Runnable target, String name);
-        Thread t = new Thread(ThreadGroup group, Runnable target, String name, long stackSize);
-        Thread t = new Thread(ThreadGroup group, String name);
+Thread t = new Thread(ThreadGroup group, Runnable target, String name);
+Thread t = new Thread(ThreadGroup group, Runnable target, String name, long stackSize);
+Thread t = new Thread(ThreadGroup group, String name);
 ```
 
 <br>
