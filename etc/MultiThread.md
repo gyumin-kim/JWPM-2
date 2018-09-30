@@ -759,5 +759,115 @@ public class DaemonExample {
 
 <br>
 
+## 스레드 그룹
 
+스레드 그룹(ThreadGroup)은 관련된 스레드를 묶어서 관리할 목적으로 이용된다. JVM이 실행되면 `system` 스레드 그룹을 만들고, system의 하위 스레드 그룹으로 `main`을 만들고 메인 스레드를 main 스레드 그룹에 포함시킨다. 명시적으로 스레드 그룹에 포함시키지 않으면 기본적으로 자신을 생성한 스레드와 같은 스레드 그룹에 속하게 된다.
+
+### 스레드 그룹 이름 얻기
+
+현재 스레드가 속한 스레드 그룹의 이름을 얻고 싶다면, 다음과 같은 코드를 사용한다.
+
+```java
+ThreadGroup group = Thread.currentGroup().getThreadGroup();
+String groupName = group.getName();
+```
+
+<br>
+
+```java
+public class ThreadInfoExample {
+    public static void main(String[] args) {
+        AutoSaveThread autoSaveThread = new AutoSaveThread();
+        autoSaveThread.setName("AutoSaveThread");
+        autoSaveThread.setDaemon(true);
+        autoSaveThread.start();
+
+        Map<Thread, StackTraceElement[]> map = Thread.getAllStackTraces();
+        Set<Thread> threads = map.keySet();
+        for (Thread thread : threads) {
+            System.out.println("Name: " + thread.getName() + ((thread.isDaemon()) ? "(데몬)": "(주)"));
+            System.out.println("\t" + "소속그룹: " + thread.getThreadGroup().getName());
+            System.out.println();
+        }
+    }
+}
+```
+
+<br>
+
+### 스레드 그룹 생성
+
+명시적으로 스레드 그룹을 만드려면, 다음 생성자 중 하나를 이용해서 `ThreadGroup` 객체를 만든다.
+
+```java
+ThreadGroup tg = new ThreadGroup(String name);
+ThreadGroup tg = new ThreadGroup(ThreadGroup parent, String name);
+```
+
+스레드 그룹 생성 시 부모 스레드 그룹을 지정하지 않으면, 현재 스레드가 속한 그룹의 하위 그룹으로 생성된다.
+
+새로운 스레드 그룹을 생성한 후, 그 그룹에 어떤 스레드를 포함시키려면 `Thread` 객체를 생성할 때 생성자 매개값으로 스레드 그룹을 지정하면 된다.
+
+```java
+Thread t = new Thread(ThreadGroup group, Runnable target);
+        Thread t = new Thread(ThreadGroup group, Runnable target, String name);
+        Thread t = new Thread(ThreadGroup group, Runnable target, String name, long stackSize);
+        Thread t = new Thread(ThreadGroup group, String name);
+```
+
+<br>
+
+### 스레드 그룹의 일괄 `interrupt()`
+
+스레드 그룹에서 제공하는 `interrupt()`를 이용하면, 그룹 내에 포함된 모든 스레드들을 한번에 interrupt할 수 있다. 다만 개별 스레드에서 발생하는 `InterruptedException`에 대한 예외 처리를 제공하지 않으므로, 안전한 종료를 위해서는 개별 스레드가 예외 처리를 해야 한다.
+
+```java
+public class WorkThread extends Thread {
+    public WorkThread(ThreadGroup threadGroup, String threadName) {
+        super(threadGroup, threadName);
+    }
+
+    @Override
+    public void run() {
+        while (true) {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException ie) {
+                System.out.println(getName() + " interrupted");
+                break;
+            }
+        }
+        System.out.println(getName() + " 종료됨");
+    }
+}
+```
+
+```java
+public class ThreadGroupExample {
+    public static void main(String[] args) {
+        ThreadGroup myGroup = new ThreadGroup("myGroup");
+        WorkThread workThreadA = new WorkThread(myGroup, "workThreadA");
+        WorkThread workThreadB = new WorkThread(myGroup, "workThreadB");
+
+        workThreadA.start();
+        workThreadB.start();
+
+        System.out.println("[ main 스레드 그룹의 list() 출력 내용 ]");
+        ThreadGroup mainGroup = Thread.currentThread().getThreadGroup();
+        mainGroup.list();
+        System.out.println();
+
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException ie) {}
+
+        System.out.println("[ myGroup 스레드 그룹의 interrupt() 호출 ]");
+        myGroup.interrupt();
+    }
+}
+```
+
+<br>
+
+## 스레드 풀(ThreadPool)
 
