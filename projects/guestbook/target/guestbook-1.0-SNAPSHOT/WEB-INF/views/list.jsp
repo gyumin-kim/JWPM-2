@@ -35,13 +35,5 @@
             <a href="/guestbook/delete?id=${guestbook.id}">삭제</a><br><br>
         </c:if>
     </c:forEach>
-
-    <%-- 방명록 목록을 출력한다. --%>
-    <%--이름 : 홍길동 <br>--%>
-    <%--내용 : 자바가 ... <br>--%>
-    <%--<a href="/guestbook/delete?id=1">삭제</a><br><br>--%>
-    <%--이름 : 고길동 <br>--%>
-    <%--내용 : 하하  ... <br>--%>
-    <%--<a href="/guestbook/delete?id=2">삭제</a><br>--%>
 </body>
 </html>
