@@ -23,6 +23,7 @@
 
 > - [2018/10/01](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181001.md): Servlet Lifecycle, Cookie & Session, JSP의 실행순서, MVC Model 1 & 2
 > - [2018/10/02](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181002.md): 간단한 방명록 만들기, redirect, forward, URL path・parameter, form으로 받은 parameter 읽어들이기, DAO・VO・DTO, EL/JSTL
+> - [2018/10/04](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181004.md): Servlet & JSP's Scope, MySQL user・table 생성 및 guestbook과 연동
 
 ## Etc.
 
