@@ -7,17 +7,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="551e99f1-1a96-4151-8fdc-88e1563201a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/GetClassPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/HttpServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/MiniWasConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/MyServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/WasConfigurationManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/WasConfigurationManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/WebServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/WebServletMapperManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guestbook.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/guestbook/dao/DbUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/guestbook/dao/GuestbookDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/guestbook/servlet/Guestbook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/guestbook/servlet/GuestbookDeleteServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/guestbook/servlet/GuestbookListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/guestbook/servlet/GuestbookLoginServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/guestbook/servlet/GuestbookLogoutServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/guestbook/servlet/GuestbookWriteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/Connector.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/Connector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/DefaultServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/DefaultServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/HTTPExam02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/HTTPExam02.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -117,28 +125,34 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="10" />
           <entry key="jsp" value="1" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="10" />
           <entry key="JSP" value="1" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="java" value="34" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="JAVA" value="34" />
           <entry key="XML" value="4" />
         </counts>
       </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+      <usages-collector id="statistics.spring.boot.mvc.usages" />
+      <usages-collector id="statistics.js.language.service.starts" />
+      <usages-collector id="statistics.spring.boot.run.usages" />
     </session>
   </component>
   <component name="FileEditorManager">
@@ -152,11 +166,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookDeleteServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="494">
               <caret line="34" selection-start-line="34" selection-end-line="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/dao/GuestbookDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,16 +212,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookLogoutServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -223,10 +252,10 @@
         <option value="$PROJECT_DIR$/webapp/WEB-INF/views/list.jsp" />
         <option value="$PROJECT_DIR$/webapp/WEB-INF/views/login.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookLoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookListServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/guestbook/dao/GuestbookDao.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java" />
       </list>
     </option>
   </component>
@@ -267,8 +296,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -376,7 +406,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538644070868" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538715406051" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -505,17 +535,18 @@
       <workItem from="1538642533923" duration="662000" />
       <workItem from="1538643233689" duration="132000" />
       <workItem from="1538643407004" duration="316000" />
-      <workItem from="1538643763420" duration="225000" />
+      <workItem from="1538643763420" duration="2480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25908000" />
+    <option name="totallyTimeSpent" value="28146000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -525,7 +556,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34275183" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18796068" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -534,7 +565,7 @@
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32923833" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.18550369" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.18550369" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.32923833" />
       <window_info anchor="bottom" id="Version Control" order="14" show_stripe_button="false" />
@@ -544,7 +575,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="5" visible="true" weight="0.3297568" />
+      <window_info anchor="right" id="Maven Projects" order="5" weight="0.3297568" />
       <window_info anchor="right" id="Database" order="6" weight="0.1981402" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
@@ -666,26 +697,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/dao/GuestbookDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/Guestbook.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
@@ -721,24 +732,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookLogoutServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookDeleteServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="494">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="54" selection-start-line="14" selection-start-column="54" selection-end-line="14" selection-end-column="54" />
+        <state relative-caret-position="225">
+          <caret line="27" column="41" lean-forward="true" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookDeleteServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookLogoutServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="304">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/dao/GuestbookDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="60" column="40" selection-start-line="60" selection-start-column="40" selection-end-line="60" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/javax/servlet/annotation/WebServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-588">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

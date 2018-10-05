@@ -17,8 +17,8 @@ public class GuestbookWriteServlet extends HttpServlet {
         // 이름과 내용을 읽어들인다
         String name = req.getParameter("name");
         String content = req.getParameter("content");
-        System.out.println(name);
-        System.out.println(content);
+        System.out.print("작성자: " + name + " / ");
+        System.out.println("내용: " + content);
 
         // 이름과 내용을 검사한다
         // DB에 삽입한다
