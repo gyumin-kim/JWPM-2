@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20bdd369-89da-4899-8ff2-406b1f3f524a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/GetClassPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/HttpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/MiniWasConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/MyServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/WasConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/WasConfigurationManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/WebServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/WebServletMapperManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guestbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../guestbook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../guestbook/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../guestbook/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/was/Connector.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/was/Connector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/was/DefaultServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/was/DefaultServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/was/HTTPExam02.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/was/HTTPExam02.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -149,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="49" column="66" lean-forward="true" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+            <state relative-caret-position="163">
+              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -330,7 +312,7 @@
     <property name="SearchEverywhereHistoryKey" value="requestlineexam&#9;PSI&#9;JAVA://my.examples.was.RequestLineExam" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538715406137" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538740375926" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -443,16 +425,15 @@
       <option name="presentableId" value="Default" />
       <updated>1537413730560</updated>
       <workItem from="1538011569153" duration="30000" />
-      <workItem from="1538702221879" duration="10804000" />
+      <workItem from="1538702221879" duration="10954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10834000" />
+    <option name="totallyTimeSpent" value="10984000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17381974" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
@@ -739,8 +720,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="49" column="66" lean-forward="true" selection-start-line="49" selection-start-column="66" selection-end-line="49" selection-end-column="66" />
+        <state relative-caret-position="163">
+          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

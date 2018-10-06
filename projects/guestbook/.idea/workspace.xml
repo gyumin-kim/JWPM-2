@@ -7,25 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="551e99f1-1a96-4151-8fdc-88e1563201a1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassFinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/GetClassPath.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/HttpServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/MiniWasConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/MyServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/WasConfigurationManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/WasConfigurationManagerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/WebServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/WebServletMapperManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../miniwasanswer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniwasanswer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/Connector.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/Connector.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/DefaultServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/DefaultServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/HTTPExam02.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/HTTPExam02.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -406,7 +388,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538715406051" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538740375774" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -544,7 +526,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
