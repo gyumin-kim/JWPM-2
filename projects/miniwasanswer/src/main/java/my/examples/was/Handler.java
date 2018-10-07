@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Handler extends Thread {
-    private static Map<String, Class> baseDirMap; // < path, class정보 >
+    private static Map<String, Class> baseDirServletMap; // < path, class정보 >
     private static Map<String, HttpServlet> httpServletMap;
     private static String baseDir = "/Users/kyumin/Documents/Programming/fastcampus/JWPM-2/JWPM-2-memo/" +
             "projects/miniwasanswer/target/classes/";
@@ -15,8 +15,8 @@ public class Handler extends Thread {
     static {
         httpServletMap = new HashMap<>();
         WebServletMapperManager wsmm = new WebServletMapperManager();
-        baseDirMap = wsmm.findServlet(baseDir);
-        // baseDirMap: @WebServlet이 붙어있는 클래스들 < path, class 정보 >
+        baseDirServletMap = wsmm.findServlet(baseDir);
+        // baseDirServletMap: @WebServlet이 붙어있고, HttpServlet을 상속받는 클래스들 < path, class 정보 >
     }
 
     private Socket socket;
@@ -40,11 +40,11 @@ public class Handler extends Thread {
 
             // request, response를 이용하여 무엇을할까?
             String path = request.getPath();
-            Class clazz = baseDirMap.get(path);    // clazz: class 이름
+            Class clazz = baseDirServletMap.get(path);    // clazz: class 이름
 
-            // 1. path 정보에 해당하는 동적 프로그램이 있는지 확인한다.
-            // ex : /today  --->  TodayServlet이 실행한 결과가 보여준다.
             if (clazz != null) {
+                // 1. path 정보에 해당하는 동적 프로그램이 있는지 확인한다.
+                //    ex : /today  --->  TodayServlet이 실행한 결과가 보여진다.
                 HttpServlet httpServlet = httpServletMap.get(path);
                 if(httpServlet == null){
                     httpServlet = (HttpServlet)clazz.newInstance(); // 객체가 생성

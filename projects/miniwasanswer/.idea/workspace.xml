@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20bdd369-89da-4899-8ff2-406b1f3f524a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/Sample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../guestbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../guestbook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/was/HttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/was/HttpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/was/ClassLoaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/was/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/was/Handler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/was/HttpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/was/HttpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/was/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/was/MyServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/was/WebServletMapperManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/was/WebServletMapperManager.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,28 +78,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="41" />
+          <entry key="java" value="64" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="41" />
+          <entry key="JAVA" value="64" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="2" />
-          <entry key="java" value="2960" />
+          <entry key="dummy" value="4" />
+          <entry key="java" value="3991" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2960" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="3991" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -99,64 +114,56 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+            <state relative-caret-position="95">
+              <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/MiniWAS.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest03.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Connector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            <state relative-caret-position="171">
+              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#202#203#0" expanded="true" />
-                <element signature="e#234#235#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest04.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#629#668#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest05.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest06.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            <state relative-caret-position="304">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/MyServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/HttpServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="e#85#86#0" expanded="true" />
-                <element signature="e#121#122#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -165,8 +172,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/WebServletMapperManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            <state relative-caret-position="212">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -177,8 +184,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="228">
+              <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -187,13 +194,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/GetClassPath.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
+            <state relative-caret-position="-338">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/HttpServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <folding>
+                <element signature="e#85#86#0" expanded="true" />
+                <element signature="e#121#122#0" expanded="true" />
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
+                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
+                <element signature="e#384#385#0" expanded="true" />
+                <element signature="e#433#434#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/MyServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -240,6 +275,13 @@
         <option value="$PROJECT_DIR$/src/main/java/my/examples/was/WebServletMapperManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/was/HttpServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/was/Sample.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest01.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest02.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest03.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest04.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest05.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest06.java" />
       </list>
     </option>
   </component>
@@ -312,12 +354,17 @@
     <property name="SearchEverywhereHistoryKey" value="requestlineexam&#9;PSI&#9;JAVA://my.examples.was.RequestLineExam" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538740375926" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538917906912" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="my.examples.was" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -331,13 +378,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GetClassPath">
-    <configuration name="ClassLoaderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.examples.was.ClassLoaderTest" />
+  <component name="RunManager" selected="Application.ClassLoaderTest06">
+    <configuration name="ClassLoaderTest02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.examples.was.ClassLoaderTest02" />
       <module name="miniwas-answer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.examples.was.WebServlet" />
+          <option name="PATTERN" value="my.examples.was.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -345,12 +392,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetClassPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.examples.was.GetClassPath" />
+    <configuration name="ClassLoaderTest03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.examples.was.ClassLoaderTest03" />
       <module name="miniwas-answer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.examples.was.WebServlet" />
+          <option name="PATTERN" value="my.examples.was.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -358,25 +405,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HTTPExam01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.examples.was.HTTPExam01" />
-      <module name="miniwasanswer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="my.examples.was.WebServlet" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.examples.was.Main" />
+    <configuration name="ClassLoaderTest04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.examples.was.ClassLoaderTest04" />
       <module name="miniwas-answer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.examples.was.WebServlet" />
+          <option name="PATTERN" value="my.examples.was.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -384,12 +418,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RequestLineExam" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.examples.was.RequestLineExam" />
-      <module name="miniwasanswer" />
+    <configuration name="ClassLoaderTest05" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.examples.was.ClassLoaderTest05" />
+      <module name="miniwas-answer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="my.examples.was.WebServlet" />
+          <option name="PATTERN" value="my.examples.was.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassLoaderTest06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.examples.was.ClassLoaderTest06" />
+      <module name="miniwas-answer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.examples.was.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -398,19 +445,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.HTTPExam01" />
-      <item itemvalue="Application.RequestLineExam" />
-      <item itemvalue="Application.Main" />
-      <item itemvalue="Application.GetClassPath" />
-      <item itemvalue="Application.ClassLoaderTest" />
+      <item itemvalue="Application.ClassLoaderTest02" />
+      <item itemvalue="Application.ClassLoaderTest03" />
+      <item itemvalue="Application.ClassLoaderTest04" />
+      <item itemvalue="Application.ClassLoaderTest05" />
+      <item itemvalue="Application.ClassLoaderTest06" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GetClassPath" />
-        <item itemvalue="Application.ClassLoaderTest" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.HTTPExam01" />
-        <item itemvalue="Application.RequestLineExam" />
+        <item itemvalue="Application.ClassLoaderTest06" />
+        <item itemvalue="Application.ClassLoaderTest05" />
+        <item itemvalue="Application.ClassLoaderTest04" />
+        <item itemvalue="Application.ClassLoaderTest03" />
+        <item itemvalue="Application.ClassLoaderTest02" />
       </list>
     </recent_temporary>
   </component>
@@ -425,17 +472,18 @@
       <option name="presentableId" value="Default" />
       <updated>1537413730560</updated>
       <workItem from="1538011569153" duration="30000" />
-      <workItem from="1538702221879" duration="10954000" />
+      <workItem from="1538702221879" duration="15415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10984000" />
+    <option name="totallyTimeSpent" value="15445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17381974" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17381974" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -444,7 +492,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32923833" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.16093366" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.19164619" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -493,33 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/HTTPExam02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/MiniWasConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#156#157#0" expanded="true" />
-            <element signature="e#188#189#0" expanded="true" />
-            <element signature="e#238#239#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#348#349#0" expanded="true" />
-            <element signature="e#398#399#0" expanded="true" />
-            <element signature="e#440#441#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -534,29 +555,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1392#1393#0" expanded="true" />
-            <element signature="e#1417#1418#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="393">
           <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="123" column="34" selection-start-line="123" selection-start-column="23" selection-end-line="123" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -581,28 +583,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="3408" column="17" lean-forward="true" selection-start-line="3408" selection-start-column="17" selection-end-line="3408" selection-end-column="17" />
-          <folding>
-            <element signature="e#139547#139548#0" expanded="true" />
-            <element signature="e#139624#139625#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/annotation/Annotation.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
           <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -627,30 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/WebServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/MiniWAS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/GetClassPath.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -661,30 +621,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassFinder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/MiniWAS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/WebServletMapperManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/WebServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="56" lean-forward="true" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="475">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Connector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        <state relative-caret-position="437">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#202#203#0" expanded="true" />
@@ -693,35 +647,198 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/DefaultServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Request.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="45" lean-forward="true" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+        <state relative-caret-position="412">
+          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/HttpServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="-338">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
-            <element signature="e#85#86#0" expanded="true" />
-            <element signature="e#121#122#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/MyServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="190">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Handler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/MiniWasConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="46" column="32" lean-forward="true" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+        <state relative-caret-position="304">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#156#157#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#238#239#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#316#317#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/HTTPExam02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/DefaultServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#72#73#0" expanded="true" />
+            <element signature="e#110#111#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#188#189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="366" column="17" lean-forward="true" selection-start-line="366" selection-start-column="17" selection-end-line="366" selection-end-column="17" />
+          <folding>
+            <element signature="e#139547#139548#0" expanded="true" />
+            <element signature="e#139624#139625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/util/Enumeration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="703">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/src.zip!/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="1133" column="28" selection-start-line="1133" selection-start-column="28" selection-end-line="1133" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest04.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="33" lean-forward="true" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#629#668#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest05.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/HttpServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding>
+            <element signature="e#85#86#0" expanded="true" />
+            <element signature="e#121#122#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#305#306#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/WebServletMapperManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/was/ClassLoaderTest06.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -768,7 +885,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android API 27 Platform</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -780,11 +897,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>miniwasanswer</last-edited>
+          <last-edited>miniwas-answer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -804,7 +922,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>StdOut</last-edited>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.9.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

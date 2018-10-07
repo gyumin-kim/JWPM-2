@@ -7,7 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="551e99f1-1a96-4151-8fdc-88e1563201a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest06.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../miniwasanswer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/ClassLoaderTest05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/HttpServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/src/main/java/my/examples/was/HttpServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/ClassLoaderTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/Handler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/HttpServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/HttpServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/MyServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/MyServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/WebServletMapperManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/target/classes/my/examples/was/WebServletMapperManager.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -172,8 +187,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="305">
+              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -388,7 +403,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538740375774" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538917906885" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -517,15 +532,16 @@
       <workItem from="1538642533923" duration="662000" />
       <workItem from="1538643233689" duration="132000" />
       <workItem from="1538643407004" duration="316000" />
-      <workItem from="1538643763420" duration="2480000" />
+      <workItem from="1538643763420" duration="2761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28146000" />
+    <option name="totallyTimeSpent" value="28427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19957082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -753,8 +769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/guestbook/servlet/GuestbookWriteServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="305">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
