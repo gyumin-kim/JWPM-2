@@ -26,6 +26,9 @@
 > - [2018/10/04](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181004.md): Servlet & JSP's Scope, MySQL user・table 생성 및 guestbook과 연동
 > - [2018/10/05](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181005.md): MiniWAS 완성하기, Annotation 클래스 직접 만들기, WAS 동작 원리 이해하기
 
+
+> - [2018/10/08](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181008.md): Git&GitHub 사용법, Git-Flow, 게시판 프로젝트
+
 ## Etc.
 
 > - [java.lang / java.util package 정리](https://github.com/gyumin-kim/JWPM-2/blob/master/etc/java.lang_java.util_package.md)
