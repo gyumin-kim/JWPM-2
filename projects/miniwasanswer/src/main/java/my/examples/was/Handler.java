@@ -11,7 +11,8 @@ public class Handler extends Thread {
     private static String baseDir = "/Users/kyumin/Documents/Programming/fastcampus/JWPM-2/JWPM-2-memo/" +
             "projects/miniwasanswer/target/classes/";
 
-    // (baseDir에 있는) WebServlet이 붙어 있는 모든 클래스들을 찾는다. (최초 실행할 때만 처리할 일)
+    // 1. HttpServlet 객체(httpServletMap) 생성
+    // 2. (baseDir에 있는) @WebServlet이 붙어 있는 모든 클래스들을 찾는다. (최초 실행할 때만 처리할 일)
     static {
         httpServletMap = new HashMap<>();
         WebServletMapperManager wsmm = new WebServletMapperManager();
@@ -38,7 +39,7 @@ public class Handler extends Thread {
             Request request = new Request(in, br);
             Response response = new Response(out, pw);
 
-            // request, response를 이용하여 무엇을할까?
+            // request, response를 이용하여 무엇을 할까?
             String path = request.getPath();
             Class clazz = baseDirServletMap.get(path);    // clazz: class 이름
 
