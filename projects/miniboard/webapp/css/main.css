@@ -1,0 +1,164 @@
+body, html {
+    height: 100%;
+}
+
+.bg {
+    background-image: url("../img/gf-steak-salad.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.top-header {
+    border-bottom: 0.2px white solid;
+    width: 75%;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px 0;
+}
+
+.top-header .logo {
+    margin: 15px 0;
+    color: white;
+    font-weight: bold;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.top-header .logout-button {
+    position: absolute;
+    top: 3%;
+    right: 15%;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.top-header .logout-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.home-link {
+    text-decoration: none;
+}
+
+.enter {
+    position: absolute;
+    width: 22%;
+    height: 14%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.2em white solid;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(200, 197, 197, 0.3);
+}
+
+.enter:hover {
+    background-color: rgba(68, 67, 67, 0.5);
+}
+
+.enter p {
+    font-size: 45px;
+    color: white;
+    line-height: 16px;
+    font-weight: 500;
+    /* font-family: 'Song Myung', serif; */
+    font-family: 'Yeon Sung', cursive;
+}
+
+.github-link {
+    position:absolute;
+    font-size: 34px;
+    color: white;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: #dbdbdbb4;
+}
+
+.list-wrapper {
+    position: absolute;
+    bottom: 0;
+    height: 88%;
+    width: 100%;
+    background-color: rgba(222, 222, 222, 0.81);
+}
+
+.list-body {
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*border: 0.2em white solid;*/
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(200, 197, 197, 0.3);
+}
+
+.list-table {
+    width: 100%;
+}
+
+.list-table tbody tr {
+    /*padding-top: 15px;*/
+    /*padding-bottom: 15px;*/
+    height: 25px;
+}
+
+.list-table tbody tr:hover {
+    background-color: rgba(73, 166, 36, 0.41);
+}
+
+.list-table tbody td:nth-child(1),
+.list-table tbody td:nth-child(3),
+.list-table tbody td:nth-child(4) {
+    text-align: center;
+}
+
+.list-table tbody td:nth-child(2) {
+    padding-left: 10px;
+}
+
+.write-body form {
+    padding-top: 50px;
+    padding-left: 300px;
+}
+
+.detail-body {
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-bottom: 100px;
+}
+
+.article-title {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.article-content {
+    font-family: 'Noto Serif KR', sans-serif;
+}
+
+.login-form {
+    margin-top: 180px;
+}
+
+.login-form input {
+    height: 30px;
+}

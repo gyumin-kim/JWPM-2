@@ -1,18 +1,16 @@
-package my.examples.miniboard.servlet;
+package my.examples.miniboard.dto;
 
 public class User {
-    /*
-    id int not null, auto_increment,
-	user_id varchar(20),
-	password varchar(20),
-	primary key(id)
-     */
     private long id;
-    private String userId;
+    private String name;
     private String password;
 
-    public User(String userId, String password) {
-        this.userId = userId;
+    public User() {
+
+    }
+
+    public User(String name, String password) {
+        this.name = name;
         this.password = password;
     }
 
@@ -24,12 +22,12 @@ public class User {
         this.id = id;
     }
 
-    public String getUserId() {
-        return userId;
+    public String getName() {
+        return name;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getPassword() {

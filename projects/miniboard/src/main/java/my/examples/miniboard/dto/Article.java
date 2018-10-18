@@ -1,19 +1,8 @@
-package my.examples.miniboard.servlet;
+package my.examples.miniboard.dto;
 
 import java.time.LocalDateTime;
 
 public class Article {
-    /*
-    id int not null, auto_increment,
-	user_id varchar(20),
-	country varchar(10),
-	category varchar(10),
-	title varchar(50),
-	content varchar(500),
-	reg_date Date,
-	primary key(id),
-	foreign key user_id references TB_USER(user_id)
-     */
     private Long id;
     private Long userId;
     private String country;

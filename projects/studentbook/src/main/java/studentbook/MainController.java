@@ -2,11 +2,11 @@ package studentbook;
 
 import java.util.List;
 
-public class HomeController {
+public class MainController {
     private UI ui;
     private StudentDAO studentDAO;
 
-    public HomeController(UI ui, StudentDAO studentDAO) {
+    public MainController(UI ui, StudentDAO studentDAO) {
         this.ui = ui;
         this.studentDAO = studentDAO;
     }
@@ -19,8 +19,12 @@ public class HomeController {
             // 사용자가 입력한 옵션에 따라 다른 일 수행 (StudentDAO 사용)
             switch (selectedOption) {
                 case 1:
-                    Student student = ui.addStudent();
-                    studentDAO.add(student);
+                    if (ui.addStudent() != null) {
+                        Student student = ui.addStudent();
+                        studentDAO.add(student);
+                    } else {
+                        continue;
+                    }
                     break;
                 case 2:
                     List<Student> studentList = studentDAO.getList();
