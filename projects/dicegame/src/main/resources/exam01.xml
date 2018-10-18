@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="game" class="dicegame.Game">
+        <property name="playerList">    <!-- setter injection -->
+            <list>
+                <ref bean="playerKim"/>
+                <ref bean="playerLee"/>
+                <ref bean="playerPark"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="playerKim" class="dicegame.Player">
+        <property name="name" value="Kim"/> <!-- setter injection -->
+        <property name="dice" ref="dice"/>  <!-- setter injection -->
+    </bean>
+
+    <bean id="playerLee" class="dicegame.Player">
+        <property name="name" value="Lee"/> <!-- setter injection -->
+        <property name="dice" ref="dice"/>  <!-- setter injection -->
+    </bean>
+
+    <bean id="playerPark" class="dicegame.Player">
+        <property name="name" value="Park"/>    <!-- setter injection -->
+        <property name="dice" ref="dice"/>      <!-- setter injection -->
+    </bean>
+
+    <bean id="dice" class="dicegame.Dice">
+        <constructor-arg name="face" value="6"/>
+    </bean>
+</beans>
