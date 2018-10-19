@@ -13,14 +13,14 @@ public class MainController {
 
     public void control() {
         while (true) {
-            // 사용자에게 선택할 수 있는 옵션들을 출력하고 옵션을 입력받는다.
+            // 선택할 수 있는 옵션들을 사용자에게 출력하고 옵션을 입력받는다.
             int selectedOption = ui.main();
 
             // 사용자가 입력한 옵션에 따라 다른 일 수행 (StudentDAO 사용)
             switch (selectedOption) {
                 case 1:
-                    if (ui.addStudent() != null) {
-                        Student student = ui.addStudent();
+                    Student student = ui.addStudent();
+                    if (student != null) {
                         studentDAO.add(student);
                     } else {
                         continue;

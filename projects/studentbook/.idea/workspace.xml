@@ -2,44 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8516936-b5c3-4bcc-96b1-60997d33849b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../dicegame/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/.idea/libraries/Spring_4_3_18_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/dicegame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/src/main/java/dicegame/Dice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/src/main/java/dicegame/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/src/main/java/dicegame/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/src/main/java/dicegame/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../dicegame/src/main/resources/exam01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studentbook/DBConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studentbook/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studentbook/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studentbook/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studentbook/StudentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/studentbook/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/studentbookConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../guestbook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../guestbook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../miniboard/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/config/DBConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/config/DBConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/dao/ArticleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/dao/ArticleDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/servlet/Article.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/servlet/MiniBoardWriteServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/servlet/MiniboardListServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/src/main/java/my/examples/miniboard/servlet/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../miniboard/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/webapp/WEB-INF/views/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../miniboard/webapp/WEB-INF/views/write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniboard/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniboard/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../miniwasanswer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../miniwasanswer/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/studentbook/StudentConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studentbook/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studentbook/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studentbook/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studentbook/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studentbook/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studentbook/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/studentbook/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/studentbook/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/studentbookConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/studentbookConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/studentbook/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/studentbook/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/studentbook/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/studentbook/StudentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/studentbook/UI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/studentbook/UI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/studentbookConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/studentbookConfig.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -104,23 +77,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="4" />
-          <entry key="java" value="3295" />
+          <entry key="java" value="3787" />
           <entry key="sql" value="47" />
-          <entry key="xml" value="470" />
+          <entry key="xml" value="493" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3295" />
+          <entry key="JAVA" value="3787" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="SQL" value="47" />
-          <entry key="XML" value="470" />
+          <entry key="XML" value="493" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="iml" value="2" />
-          <entry key="java" value="10" />
+          <entry key="java" value="12" />
           <entry key="png" value="1" />
           <entry key="sql" value="1" />
           <entry key="xml" value="4" />
@@ -130,7 +103,7 @@
         <counts>
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="10" />
+          <entry key="JAVA" value="12" />
           <entry key="Scratch" value="1" />
           <entry key="XML" value="4" />
         </counts>
@@ -143,11 +116,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/StudentConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#321#322#0" expanded="true" />
+                <element signature="e#352#353#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/studentbookConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+            <state relative-caret-position="273">
+              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,17 +156,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state relative-caret-position="168">
+              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/UI.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="525">
+              <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,11 +177,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/StudentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="98" column="41" lean-forward="true" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+            <state relative-caret-position="186">
+              <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#312#313#0" expanded="true" />
                 <element signature="e#345#346#0" expanded="true" />
                 <element signature="e#397#398#0" expanded="true" />
                 <element signature="e#441#442#0" expanded="true" />
@@ -238,20 +235,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/DBConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="142">
+              <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/studentbookConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -281,11 +269,12 @@
         <option value="$PROJECT_DIR$/src/main/java/studentbook/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/studentbook/DBConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/studentbook/Student.java" />
-        <option value="$PROJECT_DIR$/src/main/java/studentbook/StudentDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/studentbook/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/studentbookConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/studentbook/MainController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/studentbook/StudentDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/studentbookConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/java/studentbook/UI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/studentbook/StudentConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/studentbook/Main.java" />
       </list>
     </option>
   </component>
@@ -365,7 +354,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539856626696" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539917596930" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -412,12 +401,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539844821363</updated>
-      <workItem from="1539844826371" duration="10555000" />
+      <workItem from="1539844826371" duration="19003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10555000" />
+    <option name="totallyTimeSpent" value="19003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -428,7 +417,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17739628" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.17739628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -438,7 +427,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899868" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29648894" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25877762" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -488,29 +477,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="38" lean-forward="true" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/studentbookConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/DBConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/uml.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/Student.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -541,13 +509,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/StudentDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/studentbookConfig.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="98" column="41" lean-forward="true" selection-start-line="98" selection-start-column="41" selection-end-line="98" selection-end-column="41" />
+        <state relative-caret-position="84">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/UI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/DBConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="13" column="55" lean-forward="true" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/StudentDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#345#346#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
             <element signature="e#441#442#0" expanded="true" />
@@ -567,25 +561,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="273">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uml.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/UI.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/StudentConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="294">
+          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#321#322#0" expanded="true" />
+            <element signature="e#352#353#0" expanded="true" />
           </folding>
         </state>
       </provider>

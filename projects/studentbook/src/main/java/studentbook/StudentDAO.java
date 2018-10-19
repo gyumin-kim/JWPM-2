@@ -71,7 +71,7 @@ public class StudentDAO {
     }
 
     public List<Student> getList() {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("studentbookConfig.xml");
+//        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("studentbookConfig.xml");
         List<Student> studentList = new ArrayList<>();
         Connection conn = null;
         PreparedStatement ps = null;
@@ -84,7 +84,8 @@ public class StudentDAO {
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                Student student = applicationContext.getBean("student", Student.class);
+//                Student student = applicationContext.getBean("student", Student.class);
+                Student student = new Student();
                 student.setId(rs.getLong(1));
                 student.setName(rs.getString(2));
                 student.setKorean(rs.getInt(3));

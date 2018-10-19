@@ -17,5 +17,5 @@
         <property name="dbPassword" value="fc123"/>
     </bean>
 
-    <bean id="student" class="studentbook.Student" scope="prototype"/>
+    <!--<bean id="student" class="studentbook.Student" scope="prototype"/>-->
 </beans>
