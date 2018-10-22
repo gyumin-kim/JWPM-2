@@ -29,6 +29,14 @@
 
 > - [2018/10/08](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181008.md): Git&GitHub 사용법, Git-Flow, 게시판 프로젝트
 
+
+> - [2018/10/16](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181016.md): 트랜잭션, 컨테이너, Spring에서의 Bean 생성, 응집도・결합도, AOP, Joinpoint, Pointcut, Advice
+> - [2018/10/18](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181018.md): XML, XML 스키마, XML namespace, 공유객체, singleton scope, property, constructor-arg
+> - [2018/10/19](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181019.md): AnnotationConfigApplicationContext, @Configuration
+
+
+> - [2018/10/22](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181022.md): Controller-Service-Repository-DB, commit・rollback, PlatformTransactionManager, @EnableTransactionManagement, @Transactional, DataSource, Connection, DBCP, connection pool, Spring JDBC, JdbcTemplate, DAO 만드는 방법, connection pool에 설정할 수 있는 것들
+
 ## Etc.
 
 > - [java.lang / java.util package 정리](https://github.com/gyumin-kim/JWPM-2/blob/master/etc/java.lang_java.util_package.md)
