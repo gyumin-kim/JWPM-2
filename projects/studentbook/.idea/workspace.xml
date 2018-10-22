@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8516936-b5c3-4bcc-96b1-60997d33849b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../fastcampus2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fastcampus2/daoexam/src/main/java/examples/daoexam/dao/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastcampus2/daoexam/src/main/java/examples/daoexam/dao/BoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../fastcampus2/daoexam/src/main/java/examples/daoexam/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastcampus2/daoexam/src/main/java/examples/daoexam/service/BoardServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../daily/181016.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../daily/181016.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fastcampus2" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastcampus2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fastcampus2/DI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fastcampus2/DI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -63,7 +63,7 @@
     <session id="-1791259236">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -122,12 +122,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/StudentConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="336">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#233#234#0" expanded="true" />
                 <element signature="e#294#295#0" expanded="true" />
                 <element signature="e#326#327#0" expanded="true" />
@@ -149,11 +150,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+            <state relative-caret-position="273">
+              <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -369,7 +370,7 @@
       <updated>1539844821363</updated>
       <workItem from="1539844826371" duration="20252000" />
       <workItem from="1539921723952" duration="1035000" />
-      <workItem from="1539923225176" duration="3306000" />
+      <workItem from="1539923225176" duration="3328000" />
     </task>
     <task id="LOCAL-00001" summary="Configuration: XML에서 Java로 변경">
       <created>1539918490818</created>
@@ -382,10 +383,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24593000" />
+    <option name="totallyTimeSpent" value="24615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17739628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -510,13 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -529,14 +524,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/StudentConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="336">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="e#233#234#0" expanded="true" />
             <element signature="e#294#295#0" expanded="true" />
             <element signature="e#326#327#0" expanded="true" />
             <element signature="e#357#358#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/studentbook/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="27" lean-forward="true" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
         </state>
       </provider>
     </entry>
