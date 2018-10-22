@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b8516936-b5c3-4bcc-96b1-60997d33849b" name="Default Changelist" comment="" />
+    <list default="true" id="b8516936-b5c3-4bcc-96b1-60997d33849b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../fastcampus2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fastcampus2/daoexam/src/main/java/examples/daoexam/dao/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastcampus2/daoexam/src/main/java/examples/daoexam/dao/BoardDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../fastcampus2/daoexam/src/main/java/examples/daoexam/service/BoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../fastcampus2/daoexam/src/main/java/examples/daoexam/service/BoardServiceImpl.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -381,7 +386,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17739628" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

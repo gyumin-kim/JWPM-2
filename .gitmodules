@@ -1,0 +1,3 @@
+[submodule "fastcampus2"]
+	path = fastcampus2
+	url = https://github.com/urstory/fastcampus2.git
