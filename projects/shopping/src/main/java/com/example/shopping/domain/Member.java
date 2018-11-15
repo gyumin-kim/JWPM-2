@@ -18,15 +18,16 @@ public class Member {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(length = 30, nullable = false)
     private String email;
 
     @Column(length = 20, nullable = false)
     private String name;
 
-    @Column(nullable = false)
+    @Column(length = 20, nullable = false)
     private String nickname;
 
-    @Column(nullable = false)
+    @Column(length = 20, nullable = false)
     private String password;
 
     @Column(length = 15, nullable = false)
@@ -44,20 +45,8 @@ public class Member {
     @Column(nullable = false)
     private int point;
 
-    @ManyToOne
-    @JoinColumn(name = "grade_id")
-    private Grade grade;
-
     @OneToMany(mappedBy = "member")
     private List<MemberCoupon> memberCoupons;
-
-    @OneToOne
-    @JoinColumn(name = "cart_id")
-    private Cart cart;
-
-//    @OneToOne
-//    @JoinColumn(name = "wish_list_id")
-//    private WishList wishList;
 
     @OneToMany(mappedBy = "member")
     private List<Ordering> orderings;
@@ -65,6 +54,15 @@ public class Member {
     @OneToOne
     @JoinColumn(name = "payment_id")
     private Payment payment;
+
+    @ManyToOne
+    @JoinColumn(name = "grade_id")
+    private Grade grade;
+
+    @OneToMany(mappedBy = "member")
+    private List<CartProduct> cartProducts;
+//    @JoinColumn(name = "cart_id")
+//    private CartProduct cartProduct;
 
     @ManyToMany
     @JoinTable(name = "member_product_list",

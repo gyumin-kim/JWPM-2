@@ -29,6 +29,14 @@ public class Ordering {
     @JoinColumn(name = "member_id")
     private Member member;
 
+    @OneToOne
+    @JoinColumn(name = "payment_id")
+    private Payment payment;
+
     @OneToMany(mappedBy = "ordering")
     private List<OrderedProduct> orderedProducts;
+
+    @OneToOne
+    @JoinColumn(name = "delivery_id")
+    private Delivery delivery;
 }

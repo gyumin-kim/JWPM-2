@@ -1,6 +1,5 @@
 package com.example.shopping.domain;
 
-import com.sun.org.apache.bcel.internal.generic.DADD;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -10,17 +9,24 @@ import java.util.Date;
 
 @Entity
 @Table(name = "cart_product")
-@IdClass(CartProductId.class)
+//@IdClass(CartProductId.class)
 @Getter
 @Setter
 @ToString
 public class CartProduct {
-    @Id
-    @ManyToOne
-    @JoinColumn(name = "cart_id")
-    private Cart cart;
+//    @Id
+//    @ManyToOne
+//    @JoinColumn(name = "cart_id")
+//    private Cart cart;
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @ManyToOne
+    @JoinColumn(name = "member_id")
+    private Member member;
+
     @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;

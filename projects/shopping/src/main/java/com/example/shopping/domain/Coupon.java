@@ -25,8 +25,7 @@ public class Coupon {
 
     private int discountPrice;
     private double discountRatio;
-    private Date expDate;
 
-//    @OneToMany(mappedBy = "coupon")
-//    private List<MemberCoupon> memberCoupons;
+    @Column(nullable = false)
+    private Date expDate;
 }

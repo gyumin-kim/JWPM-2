@@ -3,7 +3,7 @@ package com.example.shopping.domain;
 import java.io.Serializable;
 
 public class CartProductId implements Serializable {
-    private Cart cart;
+    private CartProduct cartProduct;
     private Product product;
 
     @Override

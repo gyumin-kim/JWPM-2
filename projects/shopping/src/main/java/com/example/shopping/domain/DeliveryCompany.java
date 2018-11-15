@@ -26,4 +26,8 @@ public class DeliveryCompany {
 
     private String accountNumber;
     private String depositor;
+
+    @OneToOne
+    @JoinColumn(name = "delivery_id")
+    private Delivery delivery;
 }

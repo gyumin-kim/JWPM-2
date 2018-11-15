@@ -31,4 +31,8 @@ public class Payment {
 
     @Column(nullable = false)
     private int fee;
+
+    @OneToOne
+    @JoinColumn(name = "ordering_id")
+    private Ordering ordering;
 }

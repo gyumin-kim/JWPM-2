@@ -23,4 +23,8 @@ public class Claim {
     private String reason;
 
     private int price;
+
+    @OneToOne
+    @JoinColumn(name = "ordered_product_id")
+    private OrderedProduct orderedProduct;
 }
