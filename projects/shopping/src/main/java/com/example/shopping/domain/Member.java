@@ -17,14 +17,15 @@ public class Member {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String email;
 
-    @Column(length = 20, nullable = false) @NotNull
+    @Column(length = 20, nullable = false)
     private String name;
     private String nickname;
     private String password;
 
-    @Column(length = 15, nullable = false) @NotNull
+    @Column(length = 15, nullable = false)
     private String phone;
     private String address;
     private String zipCode;
@@ -34,16 +35,25 @@ public class Member {
     private String birthDate;
     private int point;
 
-//    @ManyToOne
-//    @JoinColumn(name = "grade_id")
-//    private Grade grade;
-
-//    @ManyToMany
-//    @JoinTable(name = "member_coupon", // 연결 테이블을 지정
-//                joinColumns = @JoinColumn(name = "member_id"),  // 멤
-//                inverseJoinColumns = @JoinColumn(name = "coupon_id"))
-//    private List<Coupon> coupons;
+    @ManyToOne
+    @JoinColumn(name = "grade_id")
+    private Grade grade;
 
     @OneToMany(mappedBy = "member")
     private List<CouponMember> couponMembers;
+
+    @OneToOne
+    @JoinColumn(name = "cart_id")
+    private Cart cart;
+
+    @OneToOne
+    @JoinColumn(name = "wish_list_id")
+    private WishList wishList;
+
+    @OneToMany(mappedBy = "member")
+    private List<Ordering> orderings;
+
+    @OneToOne
+    @JoinColumn(name = "payment_id")
+    private Payment payment;
 }

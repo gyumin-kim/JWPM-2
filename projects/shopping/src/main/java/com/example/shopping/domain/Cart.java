@@ -7,26 +7,23 @@ import lombok.ToString;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.Date;
-import java.util.List;
 
 @Entity
-@Table(name = "coupon")
+@Table(name = "cart")
 @Getter
 @Setter
 @ToString
-public class Coupon {
+public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "coupon_id")
     private Long id;
 
-    @Column(length = 45, nullable = false) @NotNull
-    private String name;
+    @Column(nullable = false)
+    private int quantity;
 
-    private int discountPrice;
-    private double discountRatio;
+    @Column(nullable = false)
     private Date expDate;
 
-    @OneToMany(mappedBy = "coupon")
-    private List<CouponMember> couponMembers;
+    @Column(nullable = false)
+    private int total;
 }
