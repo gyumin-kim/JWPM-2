@@ -5,29 +5,25 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-import java.util.Date;
-import java.util.List;
 
 @Entity
-@Table(name = "cart")
+@Table(name = "delivery_company")
 @Getter
 @Setter
 @ToString
-public class Cart {
+public class DeliveryCompany {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private int quantity;
+    private String corpNumber;
+
+    private String telNumber;
 
     @Column(nullable = false)
-    private Date expDate;
+    private String address;
 
-    @Column(nullable = false)
-    private int total;
-
-    @OneToMany(mappedBy = "cart")
-    private List<CartProduct> cartProducts;
+    private String accountNumber;
+    private String depositor;
 }

@@ -5,17 +5,22 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name = "wish_list")
-@Getter
+@Table(name = "category")
 @Setter
+@Getter
 @ToString
-public class WishList {
+public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
-    private int quantity;
+    private String name;
+
+    @OneToMany(mappedBy = "category")
+    List<Product> products = new ArrayList<>();
 }

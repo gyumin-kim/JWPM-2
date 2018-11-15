@@ -6,6 +6,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "ordering")
@@ -27,4 +28,7 @@ public class Ordering {
     @ManyToOne
     @JoinColumn(name = "member_id")
     private Member member;
+
+    @OneToMany(mappedBy = "ordering")
+    private List<OrderedProduct> orderedProducts;
 }
