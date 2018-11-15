@@ -1,3 +1,3 @@
 # shopping-mall
 
-![](https://i.postimg.cc/mrRYKXMv/shopping-mall.png)
+[![shopping-mall.png](https://i.postimg.cc/mrRYKXMv/shopping-mall.png)](https://postimg.cc/rDnRr9fj)
