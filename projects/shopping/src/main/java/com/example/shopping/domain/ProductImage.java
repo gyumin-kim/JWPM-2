@@ -7,30 +7,22 @@ import lombok.ToString;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "ordered_product")
+@Table(name = "product_image")
 @Getter
 @Setter
 @ToString
-public class OrderedProduct {
+public class ProductImage {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "ordering_id")
-    private Ordering ordering;
-
-    @ManyToOne
     @JoinColumn(name = "product_id")
     private Product product;
 
-    @OneToOne
-    @JoinColumn(name = "claim_id")
-    private Claim claim;
+    @Column(nullable = false)
+    private String fileName;
 
     @Column(nullable = false)
-    private int price;
-
-    @Column(nullable = false)
-    private int quantity;
+    private int fileSize;
 }

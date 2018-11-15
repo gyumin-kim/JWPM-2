@@ -6,6 +6,7 @@ import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "member")
@@ -54,9 +55,9 @@ public class Member {
     @JoinColumn(name = "cart_id")
     private Cart cart;
 
-    @OneToOne
-    @JoinColumn(name = "wish_list_id")
-    private WishList wishList;
+//    @OneToOne
+//    @JoinColumn(name = "wish_list_id")
+//    private WishList wishList;
 
     @OneToMany(mappedBy = "member")
     private List<Ordering> orderings;
@@ -64,4 +65,10 @@ public class Member {
     @OneToOne
     @JoinColumn(name = "payment_id")
     private Payment payment;
+
+    @ManyToMany
+    @JoinTable(name = "member_product_list",
+            joinColumns = @JoinColumn(name = "member_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id"))
+    private Set<Product> wishListSet;
 }
