@@ -5,15 +5,14 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.io.Serializable;
 
 @Entity
-@Table(name = "coupon_member")
-@IdClass(CouponMemberId.class)
+@Table(name = "member_coupon")
+@IdClass(MemberCouponId.class)
 @Getter
 @Setter
 @ToString
-public class CouponMember {
+public class MemberCoupon {
     @Id
     @ManyToOne
     @JoinColumn(name = "coupon_id")

@@ -2,7 +2,7 @@ package com.example.shopping.domain;
 
 import java.io.Serializable;
 
-public class CouponMemberId implements Serializable {
+public class MemberCouponId implements Serializable {
     private Coupon coupon;
     private Member member;
 

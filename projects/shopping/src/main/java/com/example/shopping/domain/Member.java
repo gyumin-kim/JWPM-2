@@ -5,7 +5,6 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
@@ -49,7 +48,7 @@ public class Member {
     private Grade grade;
 
     @OneToMany(mappedBy = "member")
-    private List<CouponMember> couponMembers;
+    private List<MemberCoupon> memberCoupons;
 
     @OneToOne
     @JoinColumn(name = "cart_id")

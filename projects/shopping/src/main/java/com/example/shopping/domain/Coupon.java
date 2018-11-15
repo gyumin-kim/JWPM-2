@@ -28,5 +28,5 @@ public class Coupon {
     private Date expDate;
 
     @OneToMany(mappedBy = "coupon")
-    private List<CouponMember> couponMembers;
+    private List<MemberCoupon> memberCoupons;
 }
