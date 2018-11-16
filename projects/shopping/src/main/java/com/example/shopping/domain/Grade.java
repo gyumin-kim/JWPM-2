@@ -5,8 +5,6 @@ import lombok.Setter;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
 
 @Entity
 @Table(name = "grade")
@@ -20,6 +18,7 @@ public class Grade {
 
     private String name;
 
-    @OneToMany(mappedBy = "grade")
-    List<Member> members = new ArrayList<>();
+//    @OneToMany
+//    @JoinColumn(name = "grade_id")
+//    List<Member> members = new ArrayList<>();
 }

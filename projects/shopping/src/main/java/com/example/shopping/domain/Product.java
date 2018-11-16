@@ -18,7 +18,7 @@ public class Product {
     private Long id;
 
     @Column(nullable = false)
-    private Long Number;
+    private Long number;
 
     @Column(nullable = false)
     private Long name;
@@ -35,6 +35,7 @@ public class Product {
     private int maxOrderQuantity;
     private int point;
 
+    // 상품이 카테고리를 참조: 다대일 단방향
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
@@ -48,6 +49,8 @@ public class Product {
             inverseJoinColumns = @JoinColumn(name = "promotion_id"))
     private List<Promotion> promotions;
 
+    // 상품이 상품이미지들을 참조: 일대다 단방향
     @OneToMany
+    @JoinColumn(name = "product_image_id")
     private List<ProductImage> productImages;
 }

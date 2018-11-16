@@ -59,13 +59,13 @@ public class Member {
     @JoinColumn(name = "grade_id")
     private Grade grade;
 
-    @OneToMany(mappedBy = "member")
+    // 회원과 장바구니상품: 일대다 단방향
+    @OneToMany
+    @JoinColumn(name = "member_id")
     private List<CartProduct> cartProducts;
-//    @JoinColumn(name = "cart_id")
-//    private CartProduct cartProduct;
 
     @ManyToMany
-    @JoinTable(name = "member_product_list",
+    @JoinTable(name = "wish_list_member_product",
             joinColumns = @JoinColumn(name = "member_id"),
             inverseJoinColumns = @JoinColumn(name = "product_id"))
     private Set<Product> wishListSet;
