@@ -8,22 +8,22 @@ INSERT INTO grade (id, name) VALUES (null, 'newbie');
 
 
 -- member ----------------------------------------------------
-INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
-VALUES (null, 'admin@admin.com', 'admin', 'admin', '1234', '010-9999-9999', 'admin', 99999, 999, 99, 'u', '9999-99-99', 999999, 1);
-INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
-VALUES (null, 'euismod@blanditNam.edu', '최정', 'crosby', '2984dss5', '010-2444-4574', '서울시 종로구', 87235, 173, 67, 'm', '1994-08-13', 3000, 2);
-INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
-VALUES (null, 'molestie@egestas.net', '김광현', 'oral', 'slfkj23', '010-5742-2754', '경기도 안산시', 18734, 176, 68, 'm', '1980-09-12', 5420, 2);
-INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
-VALUES (null, 'diam.dictum@Curabitur.org', '힐만', 'Trey', '9u0sdf', '010-4572-3563', '서울시 강동구', 98734, 164, 78, 'm', '1967-03-29', 320, 2);
-INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
-VALUES (null, 'blandit@natoquepenatibus.co.uk', '예이츠', 'rebekah', '2394hd', '010-1446-2522', '인천시 부평구', 12222, 158, 48, 'f', '1973-11-30', 450, 2);
-INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
-VALUES (null, 'tortor@euismodestarcu.ca', '한동민', 'dongminican', '238usd', '010-9456-4564', '부산시 동래구', 29873, 165, 88, 'm', '1963-02-28', 7200, 3);
-INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
-VALUES (null, 'lobortis@squetincidunt.com', '최항', 'hanggg', '09s0jkd', '010-1234-5678', '서울시 마포구', 34298, 167, 94, 'f', '1987-05-05', 4500, 4);
-INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
-VALUES (null, 'enean@dolorFusce.com', '로맥', 'Jamie', 'po1323', '010-5092-3843', '충청남도 서천', 23482, 176, 78, 'm', '1997-05-13', 75000, 4);
+INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, tel_number, height, weight, sex, birth_date, point, grade_id)
+VALUES (null, 'admin@admin.com', 'admin', 'admin', '1234', '010-9999-9999', 'admin', 99999, '999-999-9999', 999, 99, 'u', '9999-99-99', 999999, 1);
+INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, tel_number, height, weight, sex, birth_date, point, grade_id)
+VALUES (null, 'euismod@blanditNam.edu', '최정', 'crosby', '2984dss5', '010-2444-4574', '서울시 종로구', 87235, '032-346-2344', 173, 67, 'm', '1994-08-13', 3000, 2);
+INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, tel_number, height, weight, sex, birth_date, point, grade_id)
+VALUES (null, 'molestie@egestas.net', '김광현', 'oral', 'slfkj23', '010-5742-2754', '경기도 안산시', 18734, '032-463-3454', 176, 68, 'm', '1980-09-12', 5420, 2);
+INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, tel_number, height, weight, sex, birth_date, point, grade_id)
+VALUES (null, 'diam.dictum@Curabitur.org', '힐만', 'Trey', '9u0sdf', '010-4572-3563', '서울시 강동구', 98734, '032-395-8945', 164, 78, 'm', '1967-03-29', 320, 2);
+INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, tel_number, height, weight, sex, birth_date, point, grade_id)
+VALUES (null, 'blandit@natoquepenatibus.co.uk', '예이츠', 'rebekah', '2394hd', '010-1446-2522', '인천시 부평구', 12222, '032-973-2984', 158, 48, 'f', '1973-11-30', 450, 2);
+INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, tel_number, height, weight, sex, birth_date, point, grade_id)
+VALUES (null, 'tortor@euismodestarcu.ca', '한동민', 'dongminican', '238usd', '010-9456-4564', '부산시 동래구', 29873, '032-784-2974', 165, 88, 'm', '1963-02-28', 7200, 3);
+INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, tel_number, height, weight, sex, birth_date, point, grade_id)
+VALUES (null, 'lobortis@squetincidunt.com', '최항', 'hanggg', '09s0jkd', '010-1234-5678', '서울시 마포구', 34298, '032-982-6843', 167, 94, 'f', '1987-05-05', 4500, 4);
+INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, tel_number, height, weight, sex, birth_date, point, grade_id)
+VALUES (null, 'enean@dolorFusce.com', '로맥', 'Jamie', 'po1323', '010-5092-3843', '충청남도 서천', 23482, '032-983-3464', 176, 78, 'm', '1997-05-13', 75000, 4);
 
 
 -- category ----------------------------------------------------

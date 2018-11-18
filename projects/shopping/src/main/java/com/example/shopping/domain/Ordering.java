@@ -22,6 +22,7 @@ public class Ordering {
     private Long number;
 
     @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date date;
 
     @Column(nullable = false)

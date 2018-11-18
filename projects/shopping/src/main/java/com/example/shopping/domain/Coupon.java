@@ -22,6 +22,7 @@ public class Coupon {
     @Column(length = 45, nullable = false)
     private String name;
 
+    //TODO: discountPrice나 discountRatio가 NULL일 경우 에러 발생
     @Column(columnDefinition = "INT default NULL")
     private int discountPrice;
 
@@ -29,5 +30,6 @@ public class Coupon {
     private double discountRatio;
 
     @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date expDate;
 }

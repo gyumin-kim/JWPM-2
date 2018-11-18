@@ -24,6 +24,7 @@ public class CartProduct {
     private int quantity;
 
     @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date addedDate;
 
     @ManyToOne

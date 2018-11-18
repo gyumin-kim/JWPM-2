@@ -21,9 +21,11 @@ public class Promotion {
     private String name;
 
     @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date startDate;
 
     @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date endDate;
 
     @Column(nullable = false)

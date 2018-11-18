@@ -18,6 +18,7 @@ public class Payment {
     private Long id;
 
     @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date paymentDate;
 
     @Column(nullable = false)

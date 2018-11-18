@@ -33,14 +33,8 @@ public class Member {
     @Column(length = 15, nullable = false)
     private String phone;
 
-    @Column(nullable = false)
-    private String address;
-
-    private String zipCode;
-    private int height;
-    private int weight;
-    private String sex;
-    private String birthDate;
+    @Embedded AddressInfo addressInfo;
+    @Embedded PhysicalInfo physicalInfo;
 
     @Column(nullable = false)
     private int point;
