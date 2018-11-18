@@ -1,11 +1,12 @@
 
-------- grade -------
+-- grade ----------------------------------------------------
 INSERT INTO grade (id, name) VALUES (null, 'admin');
 INSERT INTO grade (id, name) VALUES (null, 'vip');
 INSERT INTO grade (id, name) VALUES (null, 'gold');
 INSERT INTO grade (id, name) VALUES (null, 'newbie');
 
-------- member -------
+
+-- member ----------------------------------------------------
 INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
 VALUES (null, 'admin@admin.com', 'admin', 'admin', '1234', '010-9999-9999', 'admin', 99999, 999, 99, 'u', '9999-99-99', 999999, 1);
 INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
@@ -23,7 +24,8 @@ VALUES (null, 'lobortis@squetincidunt.com', '최항', 'hanggg', '09s0jkd', '010-
 INSERT INTO member (id, email, name, nickname, password, phone, address, zip_code, height, weight, sex, birth_date, point, grade_id)
 VALUES (null, 'enean@dolorFusce.com', '로맥', 'Jamie', 'po1323', '010-5092-3843', '충청남도 서천', 23482, 176, 78, 'm', '1997-05-13', 75000, 4);
 
-------- category -------
+
+-- category ----------------------------------------------------
 INSERT INTO category (id, name) VALUES (null, '상의');
 INSERT INTO category (id, name) VALUES (null, '아우터');
 INSERT INTO category (id, name) VALUES (null, '원피스');
@@ -42,7 +44,8 @@ INSERT INTO category (id, name) VALUES (null, '생활/취미/예술');
 INSERT INTO category (id, name) VALUES (null, '코스메틱');
 INSERT INTO category (id, name) VALUES (null, '반려동물');
 
-------- product -------
+
+-- product ----------------------------------------------------
 INSERT INTO product (id, number, name, tag_price, selling_price, stock_quantity, description, max_order_quantity, point, category_id)
 VALUES (null, 659554, '하프 폴라 니트 티셔츠', 78000, 36800, 324, '봄, 가을부터 겨울철까지 활용도가 높은 하프 폴라 니트입니다. 은은한 광택감에 부드러운 촉감이 특징이며 신축성이 좋아 신체 사이즈에 구애 없는 활용이 가능합니다.', 10, 3680, 1);
 INSERT INTO product (id, number, name, tag_price, selling_price, stock_quantity, description, max_order_quantity, point, category_id)
@@ -146,7 +149,8 @@ VALUES (null, 663052, '프리미엄 구스 패딩 베스트 (베이지)', 68000,
 INSERT INTO product (id, number, name, tag_price, selling_price, stock_quantity, description, max_order_quantity, point, category_id)
 VALUES (null, 690340, '폴라베어 그랜마 올인원(머스타드)', 51000, 49980, 32, '겨울을 대표하는 북극곰 친구들이 가득히 프린팅된 아우터 시리즈로, 면 100% 원단으로 제작하여 어떤 견종이든 편안하게 입을 수 있습니다.', 5, 4990, 17);
 
-------- product_image -------
+
+-- product_image ----------------------------------------------------
 INSERT INTO product_image (id, file_name, file_size, product_id) VALUES (null, 'product1.png', 1045, 1);
 INSERT INTO product_image (id, file_name, file_size, product_id) VALUES (null, 'product2.png', 2094, 2);
 INSERT INTO product_image (id, file_name, file_size, product_id) VALUES (null, 'product3.png', 385, 3);
@@ -199,7 +203,8 @@ INSERT INTO product_image (id, file_name, file_size, product_id) VALUES (null, '
 INSERT INTO product_image (id, file_name, file_size, product_id) VALUES (null, 'product50.png', 754, 50);
 INSERT INTO product_image (id, file_name, file_size, product_id) VALUES (null, 'product51.png', 1943, 51);
 
-------- cart_product -------
+
+-- cart_product ----------------------------------------------------
 INSERT INTO cart_product (id, added_date, price, quantity, product_id, member_id)
 VALUES (null, now(), 29500, 1, 6, 2);
 INSERT INTO cart_product (id, added_date, price, quantity, product_id, member_id)
@@ -221,7 +226,8 @@ VALUES (null, now(), 68850, 2, 8, 8);
 INSERT INTO cart_product (id, added_date, price, quantity, product_id, member_id)
 VALUES (null, now(), 5900, 1, 28, 8);
 
-------- delivery_company -------
+
+-- delivery_company ----------------------------------------------------
 INSERT INTO delivery_company (id, name, account_number, bank, address, corp_number, depositor, tel_number)
 VALUES (null, 'CJ대한통운', '282202-04-158668', '국민', '경기도 평택시 신장로 55', '323-24-48734', '김영한', '031-783-3874');
 INSERT INTO delivery_company (id, name, account_number, bank, address, corp_number, depositor, tel_number)
@@ -229,7 +235,8 @@ VALUES (null, '롯데택배', '151-3435-45445', '농협', '서울특별시 강�
 INSERT INTO delivery_company (id, name, account_number, bank, address, corp_number, depositor, tel_number)
 VALUES (null, '한진택배', '93-324-346422', '신한', '경기도 용인시 처인구 이동면 화산리 168-2번지', '987-23-34804', '박희진', '031-487-8193');
 
-------- delivery -------
+
+-- delivery ----------------------------------------------------
 INSERT INTO delivery (id, address, fee, message, recipient_name, recipient_phone, delivery_company_id)
 VALUES (null, '서울시 종로구', 2500, '부재시 경비실에 맡겨주세요.', '최정', '010-2444-4574', 1);
 INSERT INTO delivery (id, address, fee, message, recipient_name, recipient_phone, delivery_company_id)
@@ -241,7 +248,8 @@ VALUES (null, '부산시 동래구', 2500, '부재시 경비실에 맡겨주세�
 INSERT INTO delivery (id, address, fee, message, recipient_name, recipient_phone, delivery_company_id)
 VALUES (null, '서울시 마포구', 0, '경비실에 맡겨주세요.', '최항', '010-1234-5678', 3);
 
-------- payment -------
+
+-- payment ----------------------------------------------------
 INSERT INTO payment (id, card_company, bank, fee, method, payment_date, payment_number)
 VALUES (null, '국민', '-', 0, '카드', now(), 2357923582);
 INSERT INTO payment (id, card_company, bank, fee, method, payment_date, payment_number)
@@ -253,7 +261,8 @@ VALUES (null, '국민', '-', 0, '카드', now(), 1298742323);
 INSERT INTO payment (id, card_company, bank, fee, method, payment_date, payment_number)
 VALUES (null, '신한', '-', 0, '카드', now(), 1984298722);
 
-------- ordering -------
+
+-- ordering ----------------------------------------------------
 INSERT INTO ordering (id, date, discount_price, number, price, quantity, reserved_money, delivery_id, member_id, payment_id)
 VALUES (null, now(), 0, 201807151820133543, 169320, 3, 16930, 1, 2, 1);
 INSERT INTO ordering (id, date, discount_price, number, price, quantity, reserved_money, delivery_id, member_id, payment_id)
@@ -265,12 +274,14 @@ VALUES (null, now(), 32300, 201811171012437351, 11800, 2, 1180, 4, 6, 4);
 INSERT INTO ordering (id, date, discount_price, number, price, quantity, reserved_money, delivery_id, member_id, payment_id)
 VALUES (null, now(), 2740, 201809171012257354, 50620, 2, 5060, 5, 7, 5);
 
-------- claim -------
+
+-- claim ----------------------------------------------------
 INSERT INTO claim (id, price, reason, type) VALUES (null, 55100, '단순 변심', '환불');
 INSERT INTO claim (id, price, reason, type) VALUES (null, 37500, '불량', '환불');
 INSERT INTO claim (id, reason, type) VALUES (null, '사이즈', '교환');
 
-------- ordered_product -------
+
+-- ordered_product ----------------------------------------------------
 INSERT INTO ordered_product (id, price, quantity, ordering_id, product_id) VALUES (null, 36800, 2, 1, 1);
 INSERT INTO ordered_product (id, price, quantity, ordering_id, product_id) VALUES (null, 77420, 1, 1, 2);
 INSERT INTO ordered_product (id, price, quantity, claim_id, ordering_id, product_id) VALUES (null, 55100, 1, 1, 1, 3);
@@ -281,19 +292,22 @@ INSERT INTO ordered_product (id, price, quantity, ordering_id, product_id) VALUE
 INSERT INTO ordered_product (id, price, quantity, claim_id, ordering_id, product_id) VALUES (null, 32000, 1, 3, 5, 41);
 INSERT INTO ordered_product (id, price, quantity, ordering_id, product_id) VALUES (null, 18620, 1, 5, 42);
 
-------- coupon -------
+
+-- coupon ----------------------------------------------------
 INSERT INTO coupon (id, name, discount_ratio, exp_date) VALUES (null, '11월 무신사 회원 정기 쿠폰 멤버등급', 4.0, now());
 INSERT INTO coupon (id, name, discount_ratio, exp_date) VALUES (null, '웰컴백쿠폰', 7.0, now());
 INSERT INTO coupon (id, name, discount_price, exp_date) VALUES (null, '생일축하 10,000원 할인쿠폰', 10000, now());
 
-------- member_coupon -------
+
+-- member_coupon ----------------------------------------------------
 INSERT INTO member_coupon (coupon_id, member_id, quantity) VALUES (1, 2, 1);
 INSERT INTO member_coupon (coupon_id, member_id, quantity) VALUES (2, 2, 1);
 INSERT INTO member_coupon (coupon_id, member_id, quantity) VALUES (1, 3, 1);
 INSERT INTO member_coupon (coupon_id, member_id, quantity) VALUES (2, 4, 2);
 INSERT INTO member_coupon (coupon_id, member_id, quantity) VALUES (3, 7, 1);
 
-------- promotion -------
+
+-- promotion ----------------------------------------------------
 INSERT INTO promotion (id, name, start_date, end_date, status)
 VALUES (null, '할인전 | 얀13 18 F/W 미드세일', now(), now(), '진행중');
 INSERT INTO promotion (id, name, start_date, end_date, status)
@@ -303,7 +317,8 @@ VALUES (null, '할인전 | 컨버스 홀리 시즌 컬렉션', now(), now(), '�
 INSERT INTO promotion (id, name, start_date, end_date, status)
 VALUES (null, '할인전 | LMC 레드라벨 쇼케이스 특별전', now(), now(), '진행중');
 
-------- product_promotion -------
+
+-- product_promotion ----------------------------------------------------
 INSERT INTO product_promotion (product_id, promotion_id)
 VALUES (13, 1);
 INSERT INTO product_promotion (product_id, promotion_id)
@@ -314,7 +329,7 @@ INSERT INTO product_promotion (product_id, promotion_id)
 VALUES (48, 4);
 
 
-------- wish_list_member_product -------
+-- wish_list_member_product ----------------------------------------------------
 INSERT INTO wish_list_member_product (member_id, product_id)
 VALUES (2, 7);
 INSERT INTO wish_list_member_product (member_id, product_id)
