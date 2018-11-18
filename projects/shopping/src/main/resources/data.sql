@@ -1,3 +1,4 @@
+/************************ SAMPLE DATA ************************/
 
 -- grade ----------------------------------------------------
 INSERT INTO grade (id, name) VALUES (null, 'admin');
@@ -319,26 +320,16 @@ VALUES (null, '할인전 | LMC 레드라벨 쇼케이스 특별전', now(), now(
 
 
 -- product_promotion ----------------------------------------------------
-INSERT INTO product_promotion (product_id, promotion_id)
-VALUES (13, 1);
-INSERT INTO product_promotion (product_id, promotion_id)
-VALUES (19, 2);
-INSERT INTO product_promotion (product_id, promotion_id)
-VALUES (24, 3);
-INSERT INTO product_promotion (product_id, promotion_id)
-VALUES (48, 4);
+INSERT INTO product_promotion (product_id, promotion_id) VALUES (13, 1);
+INSERT INTO product_promotion (product_id, promotion_id) VALUES (19, 2);
+INSERT INTO product_promotion (product_id, promotion_id) VALUES (24, 3);
+INSERT INTO product_promotion (product_id, promotion_id) VALUES (48, 4);
 
 
 -- wish_list_member_product ----------------------------------------------------
-INSERT INTO wish_list_member_product (member_id, product_id)
-VALUES (2, 7);
-INSERT INTO wish_list_member_product (member_id, product_id)
-VALUES (2, 17);
-INSERT INTO wish_list_member_product (member_id, product_id)
-VALUES (5, 6);
-INSERT INTO wish_list_member_product (member_id, product_id)
-VALUES (5, 7);
-INSERT INTO wish_list_member_product (member_id, product_id)
-VALUES (5, 44);
-INSERT INTO wish_list_member_product (member_id, product_id)
-VALUES (8, 43);
+INSERT INTO wish_list_member_product (member_id, product_id) VALUES (2, 7);
+INSERT INTO wish_list_member_product (member_id, product_id) VALUES (2, 17);
+INSERT INTO wish_list_member_product (member_id, product_id) VALUES (5, 6);
+INSERT INTO wish_list_member_product (member_id, product_id) VALUES (5, 7);
+INSERT INTO wish_list_member_product (member_id, product_id) VALUES (5, 44);
+INSERT INTO wish_list_member_product (member_id, product_id) VALUES (8, 43);
