@@ -17,10 +17,6 @@ public class CartProduct {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "product_id")
-    private Product product;
-
     @Column(nullable = false)
     private int price;
 
@@ -29,4 +25,8 @@ public class CartProduct {
 
     @Column(nullable = false)
     private Date addedDate;
+
+    @ManyToOne
+    @JoinColumn(name = "product_id")
+    private Product product;
 }

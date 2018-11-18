@@ -17,13 +17,15 @@ import java.util.List;
 public class Coupon {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "coupon_id")
     private Long id;
 
-    @Column(length = 45, nullable = false) @NotNull
+    @Column(length = 45, nullable = false)
     private String name;
 
+    @Column(columnDefinition = "INT default NULL")
     private int discountPrice;
+
+    @Column(columnDefinition = "DOUBLE default NULL")
     private double discountRatio;
 
     @Column(nullable = false)

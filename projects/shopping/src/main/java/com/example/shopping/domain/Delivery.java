@@ -16,15 +16,23 @@ public class Delivery {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String recipientName;
+    @Column(nullable = false)
     private String address;
+
+    @Column(nullable = false)
+    private String recipientName;
+
+    @Column(nullable = false)
     private String recipientPhone;
+
     private String message;
+
+    @Column(nullable = false)
     private int fee;
 
-    @OneToOne
-    @JoinColumn(name = "ordering_id")
-    private Ordering ordering;
+//    @OneToOne
+//    @JoinColumn(name = "ordering_id")
+//    private Ordering ordering;
 
     @OneToOne
     @JoinColumn(name = "delivery_company_id")

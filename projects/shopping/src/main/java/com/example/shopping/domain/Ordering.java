@@ -18,11 +18,22 @@ public class Ordering {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private int number;
+    @Column(length = 20)
+    private Long number;
+
+    @Column(nullable = false)
     private Date date;
+
+    @Column(nullable = false)
     private int price;
+
+    @Column(nullable = false)
     private int discountPrice;
+
+    @Column(nullable = false)
     private int reservedMoney;
+
+    @Column(nullable = false)
     private int quantity;
 
     @ManyToOne

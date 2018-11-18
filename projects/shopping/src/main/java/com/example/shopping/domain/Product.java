@@ -21,18 +21,22 @@ public class Product {
     private Long number;
 
     @Column(nullable = false)
-    private Long name;
+    private String name;
 
     @Column(nullable = false)
-    private int price;
-
-    private int discountedPrice;
+    private int tagPrice;
 
     @Column(nullable = false)
+    private int sellingPrice;
+
     private int stockQuantity;
 
+    @Column(length = 1000)
     private String description;
+
     private int maxOrderQuantity;
+
+    @Column(nullable = false)
     private int point;
 
     // 상품이 카테고리를 참조: 다대일 단방향
@@ -51,6 +55,6 @@ public class Product {
 
     // 상품이 상품이미지들을 참조: 일대다 단방향
     @OneToMany
-    @JoinColumn(name = "product_image_id")
+    @JoinColumn(name = "product_id")
     private List<ProductImage> productImages;
 }

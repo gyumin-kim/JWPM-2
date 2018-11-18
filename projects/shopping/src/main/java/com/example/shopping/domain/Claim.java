@@ -22,9 +22,9 @@ public class Claim {
     @Column(nullable = false)
     private String reason;
 
+    @Column(columnDefinition = "INT default NULL")
     private int price;
 
-    @OneToOne
-    @JoinColumn(name = "ordered_product_id")
+    @OneToOne(mappedBy = "claim")
     private OrderedProduct orderedProduct;
 }

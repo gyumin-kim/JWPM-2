@@ -24,15 +24,18 @@ public class Payment {
     private String method;
 
     @Column(nullable = false)
-    private int paymentNumber;
+    private Long paymentNumber;
 
     @Column(nullable = false)
     private String cardCompany;
 
     @Column(nullable = false)
+    private String bank;
+
+    @Column(nullable = false)
     private int fee;
 
-    @OneToOne
-    @JoinColumn(name = "ordering_id")
-    private Ordering ordering;
+//    @OneToOne
+//    @JoinColumn(name = "ordering_id")
+//    private Ordering ordering;
 }

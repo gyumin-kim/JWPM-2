@@ -16,6 +16,12 @@ public class OrderedProduct {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
+    private int price;
+
+    @Column(nullable = false)
+    private int quantity;
+
     @ManyToOne
     @JoinColumn(name = "ordering_id")
     private Ordering ordering;
@@ -27,10 +33,4 @@ public class OrderedProduct {
     @OneToOne
     @JoinColumn(name = "claim_id")
     private Claim claim;
-
-    @Column(nullable = false)
-    private int price;
-
-    @Column(nullable = false)
-    private int quantity;
 }

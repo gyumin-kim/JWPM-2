@@ -17,6 +17,9 @@ public class DeliveryCompany {
     private Long id;
 
     @Column(nullable = false)
+    private String name;
+
+    @Column(nullable = false)
     private String corpNumber;
 
     private String telNumber;
@@ -24,10 +27,16 @@ public class DeliveryCompany {
     @Column(nullable = false)
     private String address;
 
+    @Column(nullable = false)
     private String accountNumber;
+
+    @Column(nullable = false)
+    private String bank;
+
+    @Column(nullable = false)
     private String depositor;
 
-    @OneToOne
-    @JoinColumn(name = "delivery_id")
-    private Delivery delivery;
+//    @OneToOne
+//    @JoinColumn(name = "delivery_id")
+//    private Delivery delivery;
 }
