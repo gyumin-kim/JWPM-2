@@ -23,10 +23,10 @@ public class Coupon {
     private String name;
 
     //TODO: discountPrice나 discountRatio가 NULL일 경우 에러 발생
-    @Column(columnDefinition = "INT default NULL")
+    @Column(columnDefinition = "INT default 0")
     private int discountPrice;
 
-    @Column(columnDefinition = "DOUBLE default NULL")
+    @Column(columnDefinition = "DOUBLE default 0.0")
     private double discountRatio;
 
     @Column(nullable = false)
