@@ -36,6 +36,24 @@
 
 
 > - [2018/10/22](https://github.com/gyumin-kim/jwpm-2/blob/master/daily/181022.md): Controller-Service-Repository-DB, commit・rollback, PlatformTransactionManager, @EnableTransactionManagement, @Transactional, DataSource, Connection, DBCP, connection pool, Spring JDBC, JdbcTemplate, DAO 만드는 방법, connection pool에 설정할 수 있는 것들
+> - [2018/10/23](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181023.md)
+> - [2018/10/25](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181025.md)
+
+> - [2018/10/31](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181031.md)
+> - [2018/11/02](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181102.md)
+
+> - [2018/11/06](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181106.md)
+> - [2018/11/07](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181107.md)
+> - [2018/11/08](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181108.md)
+> - [2018/11/09](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181109.md)
+
+> - [2018/11/12](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181112.md)
+> - [2018/11/13](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181113.md)
+> - [2018/11/14](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181114.md)
+> - [2018/11/16](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181116.md)
+
+> - [2018/11/19](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181119.md)
+> - [2018/11/20](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181120.md)
 
 ## Etc.
 
