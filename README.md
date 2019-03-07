@@ -42,7 +42,7 @@
 > - [2018/10/31](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181031.md)
 > - [2018/11/02](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181102.md)
 
-> - [2018/11/06](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181106.md)
+> - [2018/11/06](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181106.md): ApplicationConfig 생성 시점, Spring MVC 동작 원리, ThreadLocal, FlashMap
 > - [2018/11/07](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181107.md)
 > - [2018/11/08](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181108.md)
 > - [2018/11/09](https://github.com/gyumin-kim/JWPM-2/blob/master/daily/181109.md)
